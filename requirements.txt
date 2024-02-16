@@ -11,7 +11,6 @@ Django==5.0.2
 idna==3.4
 jsonpatch==1.32
 jsonpointer==2.1
-libmambapy==1.5.3
 menuinst==2.0.1
 packaging==23.1
 pip==23.3.1
