@@ -8,6 +8,7 @@ charset-normalizer==2.0.4
 cryptography==41.0.7
 distro==1.8.0
 Django==5.0.2
+whitenoise==6.6.0
 gunicorn==21.2.0
 idna==3.4
 jsonpatch==1.32
