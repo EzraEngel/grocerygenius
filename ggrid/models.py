@@ -12,7 +12,7 @@ class Cart(models.Model):
 		cart_summ = {}
 		for item in CartItem.objects.filter(cart=self):
 			if item.category.id in cart_summ:
-				cart_summ[item.category.id][1] += 1
+				cart_summ[item.category.id][2] += 1
 			else:
 				cart_summ[item.category.id] = [item.category.name, '{:.2f}'.format(item.category.price), 1]
 		return cart_summ
