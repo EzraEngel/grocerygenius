@@ -1,0 +1,612 @@
+[
+  {
+    "model": "ggrid.section",
+    "pk": 1,
+    "fields": {
+      "name": "Produce"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 1,
+    "fields": {
+      "name": "Apples",
+      "section": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 1,
+    "fields": {
+      "name": "Gala Apple",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 2,
+    "fields": {
+      "name": "Fuji Apple",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 3,
+    "fields": {
+      "name": "Granny Smith Apple",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 4,
+    "fields": {
+      "name": "Honeycrisp Apple",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 5,
+    "fields": {
+      "name": "Empire Apple",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 6,
+    "fields": {
+      "name": "Red Delicious Apple",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 2,
+    "fields": {
+      "name": "Citrus",
+      "section": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 7,
+    "fields": {
+      "name": "Navel Orange",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 8,
+    "fields": {
+      "name": "Mandarin Orange",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 9,
+    "fields": {
+      "name": "Lemon",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 10,
+    "fields": {
+      "name": "Lime",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 3,
+    "fields": {
+      "name": "Leafy Greens",
+      "section": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 11,
+    "fields": {
+      "name": "Spinach",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 12,
+    "fields": {
+      "name": "Kale",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 13,
+    "fields": {
+      "name": "Lettuce",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 14,
+    "fields": {
+      "name": "Arugula",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 2,
+    "fields": {
+      "name": "Meats"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 4,
+    "fields": {
+      "name": "Beef",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 15,
+    "fields": {
+      "name": "Ground Beef",
+      "shelf": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 16,
+    "fields": {
+      "name": "Steak",
+      "shelf": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 17,
+    "fields": {
+      "name": "Beef Ribs",
+      "shelf": 4
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 5,
+    "fields": {
+      "name": "Poultry",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 18,
+    "fields": {
+      "name": "Chicken Breast",
+      "shelf": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 19,
+    "fields": {
+      "name": "Chicken Thighs",
+      "shelf": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 20,
+    "fields": {
+      "name": "Turkey",
+      "shelf": 5
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 6,
+    "fields": {
+      "name": "Pork",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 21,
+    "fields": {
+      "name": "Pork Chops",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 22,
+    "fields": {
+      "name": "Ham",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 23,
+    "fields": {
+      "name": "Bacon",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 3,
+    "fields": {
+      "name": "Dairy"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 7,
+    "fields": {
+      "name": "Milk",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 24,
+    "fields": {
+      "name": "Whole Milk",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 25,
+    "fields": {
+      "name": "Skim Milk",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 26,
+    "fields": {
+      "name": "Butter",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 8,
+    "fields": {
+      "name": "Cheese",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 27,
+    "fields": {
+      "name": "Cheddar Cheese",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 28,
+    "fields": {
+      "name": "Mozzarella Cheese",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 9,
+    "fields": {
+      "name": "Yogurt",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 29,
+    "fields": {
+      "name": "Greek Yogurt",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 30,
+    "fields": {
+      "name": "Regular Yogurt",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 31,
+    "fields": {
+      "name": "Flavored Yogurt",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 4,
+    "fields": {
+      "name": "Bakery"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 10,
+    "fields": {
+      "name": "Breads",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 32,
+    "fields": {
+      "name": "White Bread",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 33,
+    "fields": {
+      "name": "Whole Wheat Bread",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 11,
+    "fields": {
+      "name": "Pastries",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 34,
+    "fields": {
+      "name": "Croissant",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 35,
+    "fields": {
+      "name": "Danish",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 12,
+    "fields": {
+      "name": "Cakes",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 36,
+    "fields": {
+      "name": "Cheesecake",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 37,
+    "fields": {
+      "name": "Chocolate Cake",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 38,
+    "fields": {
+      "name": "Carrot Cake",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 5,
+    "fields": {
+      "name": "Canned Goods"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 13,
+    "fields": {
+      "name": "Vegetables",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 39,
+    "fields": {
+      "name": "Canned Corn",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 40,
+    "fields": {
+      "name": "Canned Peas",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 41,
+    "fields": {
+      "name": "Canned Carrots",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 14,
+    "fields": {
+      "name": "Fruits",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 42,
+    "fields": {
+      "name": "Canned Peaches",
+      "shelf": 14
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 43,
+    "fields": {
+      "name": "Canned Pears",
+      "shelf": 14
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 44,
+    "fields": {
+      "name": "Canned Pineapple",
+      "shelf": 14
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 15,
+    "fields": {
+      "name": "Soups",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 45,
+    "fields": {
+      "name": "Chicken Soup",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 46,
+    "fields": {
+      "name": "Tomato Soup",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 47,
+    "fields": {
+      "name": "Beef Stew",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 6,
+    "fields": {
+      "name": "Frozen Foods"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 16,
+    "fields": {
+      "name": "Vegetables",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 48,
+    "fields": {
+      "name": "Frozen Peas",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 49,
+    "fields": {
+      "name": "Frozen Corn",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 17,
+    "fields": {
+      "name": "Meals",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 50,
+    "fields": {
+      "name": "Frozen Pizza",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 51,
+    "fields": {
+      "name": "Frozen Lasagna",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 18,
+    "fields": {
+      "name": "Desserts",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 52,
+    "fields": {
+      "name": "Ice Cream",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 53,
+    "fields": {
+      "name": "Frozen Yogurt",
+      "shelf": 18
+    }
+  }
+]
