@@ -14,7 +14,7 @@ class Cart(models.Model):
 			if item.category.id in cart_summ:
 				cart_summ[item.category.id][1] += 1
 			else:
-				cart_summ[item.category.id] = [item.category.name, 1]
+				cart_summ[item.category.id] = [item.category.name, '{:.2f}'.format(item.category.price), 1]
 		return cart_summ
 
 	def total(self):

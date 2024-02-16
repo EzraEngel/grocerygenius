@@ -7,6 +7,9 @@ from .models import Category, Shelf, Cart, CartItem, KeyStroke
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 import random as rd
+import requests
+import shutil
+import time
 
 # Create your views here.
 
@@ -54,9 +57,9 @@ def shelf(request, shelf_id):
 		category_list = Category.objects.filter(shelf=shelf_id)
 		category_grid = []
 		for i, c in enumerate(category_list):
-			if i%4 == 0:
+			if i%3 == 0:
 				category_grid.append([])
-			category_grid[int(i/4)].append((c,i+1))
+			category_grid[int(i/3)].append((c,i+1))
 		context = {
 			"category_grid": category_grid,
 			"shelf": Shelf.objects.get(pk=shelf_id),
@@ -69,3 +72,30 @@ def shelf(request, shelf_id):
 def complete(request):
 	context={}
 	return render(request, "complete.html", context)
+
+def fetch_image(query, pk):
+	try:
+	    url = "https://api.unsplash.com/search/photos"
+	    params = {
+	        "query": query,
+	        "client_id": "y3RuxbSYYarspf4h0Tq9VBedG7Og0qWXS_TKUEFj1-Q"
+	    }
+	    response = requests.get(url, params=params).json()
+	    print(response)
+	    image_url = response['results'][0]['urls']['regular']
+
+	    # Download and save the image
+	    response = requests.get(image_url, stream=True)
+	    with open('media/'+str(pk)+'.jpg', 'wb') as out_file:
+	        shutil.copyfileobj(response.raw, out_file)
+	    del response
+
+	except:
+		pass
+
+
+def gen_images(request):
+	for category in Category.objects.all()[109:]:
+	    time.sleep(75)
+	    fetch_image(category.name, category.id)
+	return HttpResponse("You generated some images.")

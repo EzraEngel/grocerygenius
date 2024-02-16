@@ -19,6 +19,7 @@
     "pk": 1,
     "fields": {
       "name": "Gala Apple",
+      "price": "1.99",
       "shelf": 1
     }
   },
@@ -27,6 +28,7 @@
     "pk": 2,
     "fields": {
       "name": "Fuji Apple",
+      "price": "2.29",
       "shelf": 1
     }
   },
@@ -34,7 +36,8 @@
     "model": "ggrid.category",
     "pk": 3,
     "fields": {
-      "name": "Granny Smith Apple",
+      "name": "McIntosh Apple",
+      "price": "1.39",
       "shelf": 1
     }
   },
@@ -42,7 +45,8 @@
     "model": "ggrid.category",
     "pk": 4,
     "fields": {
-      "name": "Honeycrisp Apple",
+      "name": "Empire Apple",
+      "price": "1.89",
       "shelf": 1
     }
   },
@@ -50,7 +54,8 @@
     "model": "ggrid.category",
     "pk": 5,
     "fields": {
-      "name": "Empire Apple",
+      "name": "Honeycrisp Apple",
+      "price": "2.99",
       "shelf": 1
     }
   },
@@ -58,7 +63,26 @@
     "model": "ggrid.category",
     "pk": 6,
     "fields": {
+      "name": "Granny Smith Apple",
+      "price": "1.79",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 7,
+    "fields": {
       "name": "Red Delicious Apple",
+      "price": "1.49",
+      "shelf": 1
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 8,
+    "fields": {
+      "name": "Golden Delicious Apple",
+      "price": "1.59",
       "shelf": 1
     }
   },
@@ -72,25 +96,10 @@
   },
   {
     "model": "ggrid.category",
-    "pk": 7,
-    "fields": {
-      "name": "Navel Orange",
-      "shelf": 2
-    }
-  },
-  {
-    "model": "ggrid.category",
-    "pk": 8,
-    "fields": {
-      "name": "Mandarin Orange",
-      "shelf": 2
-    }
-  },
-  {
-    "model": "ggrid.category",
     "pk": 9,
     "fields": {
-      "name": "Lemon",
+      "name": "Navel Orange",
+      "price": "1.29",
       "shelf": 2
     }
   },
@@ -98,7 +107,62 @@
     "model": "ggrid.category",
     "pk": 10,
     "fields": {
+      "name": "Blood Orange",
+      "price": "2.99",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 11,
+    "fields": {
+      "name": "Lemon",
+      "price": "1.49",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 12,
+    "fields": {
       "name": "Lime",
+      "price": "0.99",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 13,
+    "fields": {
+      "name": "Grapefruit",
+      "price": "1.99",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 14,
+    "fields": {
+      "name": "Mandarin Orange",
+      "price": "3.49",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 15,
+    "fields": {
+      "name": "Tangerine",
+      "price": "0.69",
+      "shelf": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 16,
+    "fields": {
+      "name": "Clementine",
+      "price": "4.49",
       "shelf": 2
     }
   },
@@ -112,72 +176,126 @@
   },
   {
     "model": "ggrid.category",
-    "pk": 11,
+    "pk": 17,
     "fields": {
       "name": "Spinach",
+      "price": "2.99",
       "shelf": 3
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 12,
+    "pk": 18,
     "fields": {
       "name": "Kale",
+      "price": "2.99",
       "shelf": 3
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 13,
+    "pk": 19,
     "fields": {
-      "name": "Lettuce",
+      "name": "Romaine Lettuce",
+      "price": "1.99",
       "shelf": 3
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 14,
+    "pk": 20,
     "fields": {
       "name": "Arugula",
+      "price": "2.49",
       "shelf": 3
     }
   },
   {
-    "model": "ggrid.section",
-    "pk": 2,
+    "model": "ggrid.category",
+    "pk": 21,
     "fields": {
-      "name": "Meats"
+      "name": "Swiss Chard",
+      "price": "3.49",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 22,
+    "fields": {
+      "name": "Collard Greens",
+      "price": "2.29",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 23,
+    "fields": {
+      "name": "Mustard Greens",
+      "price": "1.99",
+      "shelf": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 24,
+    "fields": {
+      "name": "Iceberg Lettuce",
+      "price": "1.49",
+      "shelf": 3
     }
   },
   {
     "model": "ggrid.shelf",
     "pk": 4,
     "fields": {
-      "name": "Beef",
-      "section": 2
+      "name": "Other Greens",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 15,
+    "pk": 25,
     "fields": {
-      "name": "Ground Beef",
+      "name": "Broccoli",
+      "price": "3.99",
       "shelf": 4
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 16,
+    "pk": 26,
     "fields": {
-      "name": "Steak",
+      "name": "Brussel Sprouts",
+      "price": "3.99",
       "shelf": 4
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 17,
+    "pk": 27,
     "fields": {
-      "name": "Beef Ribs",
+      "name": "Green Beans",
+      "price": "3.99",
+      "shelf": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 28,
+    "fields": {
+      "name": "Asparagus",
+      "price": "3.99",
+      "shelf": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 29,
+    "fields": {
+      "name": "Cauliflower",
+      "price": "3.99",
       "shelf": 4
     }
   },
@@ -185,31 +303,61 @@
     "model": "ggrid.shelf",
     "pk": 5,
     "fields": {
-      "name": "Poultry",
-      "section": 2
+      "name": "Peppers",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 18,
+    "pk": 30,
     "fields": {
-      "name": "Chicken Breast",
+      "name": "Bell Pepper Green",
+      "price": "0.99",
       "shelf": 5
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 19,
+    "pk": 31,
     "fields": {
-      "name": "Chicken Thighs",
+      "name": "Bell Pepper Red",
+      "price": "1.49",
       "shelf": 5
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 20,
+    "pk": 32,
     "fields": {
-      "name": "Turkey",
+      "name": "Bell Pepper Yellow",
+      "price": "1.49",
+      "shelf": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 33,
+    "fields": {
+      "name": "Jalape\u00f1o",
+      "price": "0.69",
+      "shelf": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 34,
+    "fields": {
+      "name": "Habanero",
+      "price": "0.99",
+      "shelf": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 35,
+    "fields": {
+      "name": "Poblano",
+      "price": "1.29",
       "shelf": 5
     }
   },
@@ -217,70 +365,159 @@
     "model": "ggrid.shelf",
     "pk": 6,
     "fields": {
-      "name": "Pork",
-      "section": 2
+      "name": "Berries",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 21,
+    "pk": 36,
     "fields": {
-      "name": "Pork Chops",
+      "name": "Strawberry",
+      "price": "4.99",
       "shelf": 6
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 22,
+    "pk": 37,
     "fields": {
-      "name": "Ham",
+      "name": "Blueberry",
+      "price": "3.99",
       "shelf": 6
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 23,
+    "pk": 38,
     "fields": {
-      "name": "Bacon",
+      "name": "Raspberry",
+      "price": "4.49",
       "shelf": 6
     }
   },
   {
-    "model": "ggrid.section",
-    "pk": 3,
+    "model": "ggrid.category",
+    "pk": 39,
     "fields": {
-      "name": "Dairy"
+      "name": "Blackberry",
+      "price": "4.99",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 40,
+    "fields": {
+      "name": "Gooseberry",
+      "price": "6.99",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 41,
+    "fields": {
+      "name": "Currant",
+      "price": "5.99",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 42,
+    "fields": {
+      "name": "Mulberry",
+      "price": "7.49",
+      "shelf": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 43,
+    "fields": {
+      "name": "Elderberry",
+      "price": "8.99",
+      "shelf": 6
     }
   },
   {
     "model": "ggrid.shelf",
     "pk": 7,
     "fields": {
-      "name": "Milk",
-      "section": 3
+      "name": "Stone Fruits",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 24,
+    "pk": 44,
     "fields": {
-      "name": "Whole Milk",
+      "name": "Peach",
+      "price": "2.49",
       "shelf": 7
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 25,
+    "pk": 45,
     "fields": {
-      "name": "Skim Milk",
+      "name": "Plum",
+      "price": "2.99",
       "shelf": 7
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 26,
+    "pk": 46,
     "fields": {
-      "name": "Butter",
+      "name": "Cherry",
+      "price": "5.99",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 47,
+    "fields": {
+      "name": "Apricot",
+      "price": "3.49",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 48,
+    "fields": {
+      "name": "Nectarine",
+      "price": "2.99",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 49,
+    "fields": {
+      "name": "Mango",
+      "price": "1.99",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 50,
+    "fields": {
+      "name": "Lychee",
+      "price": "9.99",
+      "shelf": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 51,
+    "fields": {
+      "name": "Persimmon",
+      "price": "3.99",
       "shelf": 7
     }
   },
@@ -288,23 +525,79 @@
     "model": "ggrid.shelf",
     "pk": 8,
     "fields": {
-      "name": "Cheese",
-      "section": 3
+      "name": "Tomatoes",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 27,
+    "pk": 52,
     "fields": {
-      "name": "Cheddar Cheese",
+      "name": "Beefsteak Tomato",
+      "price": "2.99",
       "shelf": 8
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 28,
+    "pk": 53,
     "fields": {
-      "name": "Mozzarella Cheese",
+      "name": "Cherry Tomato",
+      "price": "3.49",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 54,
+    "fields": {
+      "name": "Heirloom Tomato",
+      "price": "4.99",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 55,
+    "fields": {
+      "name": "Roma Tomato",
+      "price": "2.49",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 56,
+    "fields": {
+      "name": "Grape Tomato",
+      "price": "3.29",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 57,
+    "fields": {
+      "name": "Green Tomato",
+      "price": "2.79",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 58,
+    "fields": {
+      "name": "Yellow Tomato",
+      "price": "3.59",
+      "shelf": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 59,
+    "fields": {
+      "name": "Kumato",
+      "price": "4.29",
       "shelf": 8
     }
   },
@@ -312,86 +605,246 @@
     "model": "ggrid.shelf",
     "pk": 9,
     "fields": {
-      "name": "Yogurt",
-      "section": 3
+      "name": "Root Vegetables",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 29,
+    "pk": 60,
     "fields": {
-      "name": "Greek Yogurt",
+      "name": "Carrot",
+      "price": "1.49",
       "shelf": 9
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 30,
+    "pk": 61,
     "fields": {
-      "name": "Regular Yogurt",
+      "name": "Beetroot",
+      "price": "1.99",
       "shelf": 9
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 31,
+    "pk": 62,
     "fields": {
-      "name": "Flavored Yogurt",
+      "name": "Turnip",
+      "price": "1.79",
       "shelf": 9
     }
   },
   {
-    "model": "ggrid.section",
-    "pk": 4,
+    "model": "ggrid.category",
+    "pk": 63,
     "fields": {
-      "name": "Bakery"
+      "name": "Radish",
+      "price": "1.99",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 64,
+    "fields": {
+      "name": "Sweet Potato",
+      "price": "0.99",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 65,
+    "fields": {
+      "name": "Parsnip",
+      "price": "2.49",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 66,
+    "fields": {
+      "name": "Rutabaga",
+      "price": "1.59",
+      "shelf": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 67,
+    "fields": {
+      "name": "Ginger",
+      "price": "0.99",
+      "shelf": 9
     }
   },
   {
     "model": "ggrid.shelf",
     "pk": 10,
     "fields": {
-      "name": "Breads",
-      "section": 4
+      "name": "Exotic Fruits",
+      "section": 1
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 32,
+    "pk": 68,
     "fields": {
-      "name": "White Bread",
+      "name": "Dragon Fruit",
+      "price": "6.99",
       "shelf": 10
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 33,
+    "pk": 69,
     "fields": {
-      "name": "Whole Wheat Bread",
+      "name": "Papaya",
+      "price": "3.49",
       "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 70,
+    "fields": {
+      "name": "Star Fruit",
+      "price": "4.99",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 71,
+    "fields": {
+      "name": "Passion Fruit",
+      "price": "1.99",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 72,
+    "fields": {
+      "name": "Guava",
+      "price": "2.49",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 73,
+    "fields": {
+      "name": "Kiwi Fruit",
+      "price": "0.99",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 74,
+    "fields": {
+      "name": "Pineapple",
+      "price": "3.99",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 75,
+    "fields": {
+      "name": "Mangosteen",
+      "price": "11.99",
+      "shelf": 10
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 2,
+    "fields": {
+      "name": "Deli"
     }
   },
   {
     "model": "ggrid.shelf",
     "pk": 11,
     "fields": {
-      "name": "Pastries",
-      "section": 4
+      "name": "Sliced Meats",
+      "section": 2
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 34,
+    "pk": 76,
     "fields": {
-      "name": "Croissant",
+      "name": "Turkey Breast",
+      "price": "7.99",
       "shelf": 11
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 35,
+    "pk": 77,
     "fields": {
-      "name": "Danish",
+      "name": "Ham",
+      "price": "6.49",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 78,
+    "fields": {
+      "name": "Roast Beef",
+      "price": "9.99",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 79,
+    "fields": {
+      "name": "Salami",
+      "price": "8.49",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 80,
+    "fields": {
+      "name": "Prosciutto",
+      "price": "11.99",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 81,
+    "fields": {
+      "name": "Pastrami",
+      "price": "10.49",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 82,
+    "fields": {
+      "name": "Chicken Breast",
+      "price": "7.49",
+      "shelf": 11
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 83,
+    "fields": {
+      "name": "Corned Beef",
+      "price": "9.89",
       "shelf": 11
     }
   },
@@ -399,70 +852,159 @@
     "model": "ggrid.shelf",
     "pk": 12,
     "fields": {
-      "name": "Cakes",
-      "section": 4
+      "name": "Sliced Cheeses",
+      "section": 2
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 36,
+    "pk": 84,
     "fields": {
-      "name": "Cheesecake",
+      "name": "Swiss Cheese",
+      "price": "5.99",
       "shelf": 12
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 37,
+    "pk": 85,
     "fields": {
-      "name": "Chocolate Cake",
+      "name": "Cheddar Cheese",
+      "price": "5.49",
       "shelf": 12
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 38,
+    "pk": 86,
     "fields": {
-      "name": "Carrot Cake",
+      "name": "Provolone Cheese",
+      "price": "6.99",
       "shelf": 12
     }
   },
   {
-    "model": "ggrid.section",
-    "pk": 5,
+    "model": "ggrid.category",
+    "pk": 87,
     "fields": {
-      "name": "Canned Goods"
+      "name": "American Cheese",
+      "price": "4.49",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 88,
+    "fields": {
+      "name": "Gouda Cheese",
+      "price": "8.99",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 89,
+    "fields": {
+      "name": "Mozzarella Cheese",
+      "price": "7.49",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 90,
+    "fields": {
+      "name": "Pepper Jack Cheese",
+      "price": "5.89",
+      "shelf": 12
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 91,
+    "fields": {
+      "name": "Havarti Cheese",
+      "price": "7.99",
+      "shelf": 12
     }
   },
   {
     "model": "ggrid.shelf",
     "pk": 13,
     "fields": {
-      "name": "Vegetables",
-      "section": 5
+      "name": "Prepared Salads",
+      "section": 2
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 39,
+    "pk": 92,
     "fields": {
-      "name": "Canned Corn",
+      "name": "Potato Salad",
+      "price": "4.99",
       "shelf": 13
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 40,
+    "pk": 93,
     "fields": {
-      "name": "Canned Peas",
+      "name": "Macaroni Salad",
+      "price": "4.99",
       "shelf": 13
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 41,
+    "pk": 94,
     "fields": {
-      "name": "Canned Carrots",
+      "name": "Coleslaw",
+      "price": "3.99",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 95,
+    "fields": {
+      "name": "Chicken Salad",
+      "price": "6.99",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 96,
+    "fields": {
+      "name": "Egg Salad",
+      "price": "5.49",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 97,
+    "fields": {
+      "name": "Tuna Salad",
+      "price": "7.49",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 98,
+    "fields": {
+      "name": "Seafood Salad",
+      "price": "8.99",
+      "shelf": 13
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 99,
+    "fields": {
+      "name": "Pasta Salad",
+      "price": "5.99",
       "shelf": 13
     }
   },
@@ -470,31 +1012,43 @@
     "model": "ggrid.shelf",
     "pk": 14,
     "fields": {
-      "name": "Fruits",
-      "section": 5
+      "name": "Rotisserie Chickens",
+      "section": 2
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 42,
+    "pk": 100,
     "fields": {
-      "name": "Canned Peaches",
+      "name": "Whole Rotisserie Chicken",
+      "price": "7.99",
       "shelf": 14
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 43,
+    "pk": 101,
     "fields": {
-      "name": "Canned Pears",
+      "name": "Half Rotisserie Chicken",
+      "price": "4.99",
       "shelf": 14
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 44,
+    "pk": 102,
     "fields": {
-      "name": "Canned Pineapple",
+      "name": "Rotisserie Chicken Breast",
+      "price": "6.99",
+      "shelf": 14
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 103,
+    "fields": {
+      "name": "Rotisserie Chicken Wings",
+      "price": "5.99",
       "shelf": 14
     }
   },
@@ -502,32 +1056,2154 @@
     "model": "ggrid.shelf",
     "pk": 15,
     "fields": {
-      "name": "Soups",
+      "name": "Sandwiches and Wraps",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 104,
+    "fields": {
+      "name": "Turkey Sandwich",
+      "price": "6.99",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 105,
+    "fields": {
+      "name": "Ham and Cheese Sandwich",
+      "price": "6.49",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 106,
+    "fields": {
+      "name": "Chicken Caesar Wrap",
+      "price": "7.49",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 107,
+    "fields": {
+      "name": "Veggie Wrap",
+      "price": "6.99",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 108,
+    "fields": {
+      "name": "BLT Sandwich",
+      "price": "5.99",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 109,
+    "fields": {
+      "name": "Roast Beef Sandwich",
+      "price": "7.99",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 110,
+    "fields": {
+      "name": "Italian Sub",
+      "price": "8.49",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 111,
+    "fields": {
+      "name": "Tuna Sandwich",
+      "price": "6.99",
+      "shelf": 15
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 16,
+    "fields": {
+      "name": "Hot Foods",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 112,
+    "fields": {
+      "name": "Fried Chicken",
+      "price": "8.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 113,
+    "fields": {
+      "name": "BBQ Ribs",
+      "price": "12.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 114,
+    "fields": {
+      "name": "Meatloaf",
+      "price": "9.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 115,
+    "fields": {
+      "name": "Mashed Potatoes",
+      "price": "4.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 116,
+    "fields": {
+      "name": "Mac and Cheese",
+      "price": "5.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 117,
+    "fields": {
+      "name": "Lasagna",
+      "price": "10.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 118,
+    "fields": {
+      "name": "Chicken Wings",
+      "price": "9.49",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 119,
+    "fields": {
+      "name": "Pizza Slice",
+      "price": "2.99",
+      "shelf": 16
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 17,
+    "fields": {
+      "name": "Olives and Antipasti",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 120,
+    "fields": {
+      "name": "Mixed Olives",
+      "price": "8.99",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 121,
+    "fields": {
+      "name": "Stuffed Peppers",
+      "price": "9.99",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 122,
+    "fields": {
+      "name": "Marinated Artichokes",
+      "price": "10.49",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 123,
+    "fields": {
+      "name": "Sun-Dried Tomatoes",
+      "price": "7.99",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 124,
+    "fields": {
+      "name": "Mozzarella Balls",
+      "price": "6.49",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 125,
+    "fields": {
+      "name": "Grilled Mushrooms",
+      "price": "8.49",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 126,
+    "fields": {
+      "name": "Hummus",
+      "price": "5.99",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 127,
+    "fields": {
+      "name": "Baba Ganoush",
+      "price": "6.99",
+      "shelf": 17
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 18,
+    "fields": {
+      "name": "Fresh Dips and Spreads",
+      "section": 2
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 128,
+    "fields": {
+      "name": "Hummus",
+      "price": "5.99",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 129,
+    "fields": {
+      "name": "Guacamole",
+      "price": "6.99",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 130,
+    "fields": {
+      "name": "Pimento Cheese",
+      "price": "7.49",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 131,
+    "fields": {
+      "name": "Artichoke Dip",
+      "price": "8.49",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 132,
+    "fields": {
+      "name": "Tzatziki",
+      "price": "5.49",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 133,
+    "fields": {
+      "name": "Salsa",
+      "price": "4.99",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 134,
+    "fields": {
+      "name": "Bean Dip",
+      "price": "6.49",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 135,
+    "fields": {
+      "name": "Spinach Dip",
+      "price": "7.99",
+      "shelf": 18
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 3,
+    "fields": {
+      "name": "Bakery"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 19,
+    "fields": {
+      "name": "Bread Loaves",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 136,
+    "fields": {
+      "name": "Sourdough Loaf",
+      "price": "4.99",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 137,
+    "fields": {
+      "name": "Whole Wheat Bread",
+      "price": "3.49",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 138,
+    "fields": {
+      "name": "Multigrain Bread",
+      "price": "3.99",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 139,
+    "fields": {
+      "name": "Rye Bread",
+      "price": "4.49",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 140,
+    "fields": {
+      "name": "French Baguette",
+      "price": "2.99",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 141,
+    "fields": {
+      "name": "Ciabatta",
+      "price": "3.89",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 142,
+    "fields": {
+      "name": "Pumpernickel Bread",
+      "price": "4.99",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 143,
+    "fields": {
+      "name": "Focaccia",
+      "price": "5.49",
+      "shelf": 19
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 20,
+    "fields": {
+      "name": "Bagels and Muffins",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 144,
+    "fields": {
+      "name": "Plain Bagel",
+      "price": "0.99",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 145,
+    "fields": {
+      "name": "Sesame Bagel",
+      "price": "1.09",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 146,
+    "fields": {
+      "name": "Blueberry Muffin",
+      "price": "2.49",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 147,
+    "fields": {
+      "name": "Chocolate Chip Muffin",
+      "price": "2.49",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 148,
+    "fields": {
+      "name": "Cinnamon Raisin Bagel",
+      "price": "1.09",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 149,
+    "fields": {
+      "name": "Everything Bagel",
+      "price": "1.19",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 150,
+    "fields": {
+      "name": "Bran Muffin",
+      "price": "2.29",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 151,
+    "fields": {
+      "name": "Pumpkin Muffin",
+      "price": "2.79",
+      "shelf": 20
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 21,
+    "fields": {
+      "name": "Cakes and Cupcakes",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 152,
+    "fields": {
+      "name": "Chocolate Cake",
+      "price": "15.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 153,
+    "fields": {
+      "name": "Vanilla Cupcake",
+      "price": "2.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 154,
+    "fields": {
+      "name": "Red Velvet Cake",
+      "price": "18.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 155,
+    "fields": {
+      "name": "Carrot Cake",
+      "price": "16.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 156,
+    "fields": {
+      "name": "Lemon Cupcake",
+      "price": "2.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 157,
+    "fields": {
+      "name": "Cheesecake",
+      "price": "19.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 158,
+    "fields": {
+      "name": "Black Forest Cake",
+      "price": "20.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 159,
+    "fields": {
+      "name": "Strawberry Shortcake",
+      "price": "17.99",
+      "shelf": 21
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 22,
+    "fields": {
+      "name": "Pastries and Croissants",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 160,
+    "fields": {
+      "name": "Butter Croissant",
+      "price": "2.49",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 161,
+    "fields": {
+      "name": "Chocolate Croissant",
+      "price": "2.99",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 162,
+    "fields": {
+      "name": "Danish Pastry",
+      "price": "3.49",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 163,
+    "fields": {
+      "name": "Apple Turnover",
+      "price": "2.99",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 164,
+    "fields": {
+      "name": "Pain au Chocolat",
+      "price": "3.19",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 165,
+    "fields": {
+      "name": "Almond Croissant",
+      "price": "2.89",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 166,
+    "fields": {
+      "name": "Eclair",
+      "price": "3.99",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 167,
+    "fields": {
+      "name": "Tiramisu Pastry",
+      "price": "4.49",
+      "shelf": 22
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 23,
+    "fields": {
+      "name": "Cookies and Biscotti",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 168,
+    "fields": {
+      "name": "Chocolate Chip Cookie",
+      "price": "1.49",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 169,
+    "fields": {
+      "name": "Oatmeal Raisin Cookie",
+      "price": "1.49",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 170,
+    "fields": {
+      "name": "Macadamia Nut Cookie",
+      "price": "1.99",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 171,
+    "fields": {
+      "name": "Ginger Snap",
+      "price": "0.99",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 172,
+    "fields": {
+      "name": "Shortbread",
+      "price": "1.79",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 173,
+    "fields": {
+      "name": "Peanut Butter Cookie",
+      "price": "1.49",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 174,
+    "fields": {
+      "name": "Almond Biscotti",
+      "price": "2.29",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 175,
+    "fields": {
+      "name": "Double Chocolate Cookie",
+      "price": "1.99",
+      "shelf": 23
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 24,
+    "fields": {
+      "name": "Pies and Tarts",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 176,
+    "fields": {
+      "name": "Apple Pie",
+      "price": "12.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 177,
+    "fields": {
+      "name": "Pecan Pie",
+      "price": "14.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 178,
+    "fields": {
+      "name": "Lemon Meringue Tart",
+      "price": "11.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 179,
+    "fields": {
+      "name": "Blueberry Pie",
+      "price": "13.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 180,
+    "fields": {
+      "name": "Pumpkin Pie",
+      "price": "9.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 181,
+    "fields": {
+      "name": "Key Lime Tart",
+      "price": "10.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 182,
+    "fields": {
+      "name": "Cherry Pie",
+      "price": "12.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 183,
+    "fields": {
+      "name": "Banoffee Pie",
+      "price": "15.99",
+      "shelf": 24
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 25,
+    "fields": {
+      "name": "Specialty Breads",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 184,
+    "fields": {
+      "name": "Olive Bread",
+      "price": "5.99",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 185,
+    "fields": {
+      "name": "Walnut Bread",
+      "price": "6.49",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 186,
+    "fields": {
+      "name": "Cheese Bread",
+      "price": "6.99",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 187,
+    "fields": {
+      "name": "Onion Bread",
+      "price": "5.49",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 188,
+    "fields": {
+      "name": "Garlic Bread",
+      "price": "4.99",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 189,
+    "fields": {
+      "name": "Potato Bread",
+      "price": "4.49",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 190,
+    "fields": {
+      "name": "Zucchini Bread",
+      "price": "7.99",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 191,
+    "fields": {
+      "name": "Cornbread",
+      "price": "5.29",
+      "shelf": 25
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 26,
+    "fields": {
+      "name": "Gluten-Free Options",
+      "section": 3
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 192,
+    "fields": {
+      "name": "Gluten-Free Bread",
+      "price": "6.99",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 193,
+    "fields": {
+      "name": "Gluten-Free Muffins",
+      "price": "4.99",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 194,
+    "fields": {
+      "name": "Gluten-Free Cookies",
+      "price": "5.49",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 195,
+    "fields": {
+      "name": "Gluten-Free Cake",
+      "price": "15.99",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 196,
+    "fields": {
+      "name": "Gluten-Free Pizza Base",
+      "price": "8.99",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 197,
+    "fields": {
+      "name": "Gluten-Free Brownies",
+      "price": "6.49",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 198,
+    "fields": {
+      "name": "Gluten-Free Cupcakes",
+      "price": "7.99",
+      "shelf": 26
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 4,
+    "fields": {
+      "name": "Meat and Seafood"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 27,
+    "fields": {
+      "name": "Beef",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 199,
+    "fields": {
+      "name": "Ribeye Steak",
+      "price": "14.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 200,
+    "fields": {
+      "name": "Ground Beef",
+      "price": "4.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 201,
+    "fields": {
+      "name": "Sirloin Steak",
+      "price": "9.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 202,
+    "fields": {
+      "name": "Chuck Roast",
+      "price": "7.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 203,
+    "fields": {
+      "name": "Filet Mignon",
+      "price": "19.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 204,
+    "fields": {
+      "name": "Beef Brisket",
+      "price": "8.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 205,
+    "fields": {
+      "name": "T-Bone Steak",
+      "price": "13.99",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 206,
+    "fields": {
+      "name": "Beef Ribs",
+      "price": "12.49",
+      "shelf": 27
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 28,
+    "fields": {
+      "name": "Poultry",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 207,
+    "fields": {
+      "name": "Chicken Breast",
+      "price": "3.99",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 208,
+    "fields": {
+      "name": "Whole Chicken",
+      "price": "1.49",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 209,
+    "fields": {
+      "name": "Chicken Thighs",
+      "price": "2.99",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 210,
+    "fields": {
+      "name": "Chicken Wings",
+      "price": "3.49",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 211,
+    "fields": {
+      "name": "Turkey Breast",
+      "price": "4.99",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 212,
+    "fields": {
+      "name": "Ground Turkey",
+      "price": "4.49",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 213,
+    "fields": {
+      "name": "Duck Breast",
+      "price": "8.99",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 214,
+    "fields": {
+      "name": "Cornish Hen",
+      "price": "5.99",
+      "shelf": 28
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 29,
+    "fields": {
+      "name": "Pork",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 215,
+    "fields": {
+      "name": "Pork Chops",
+      "price": "3.99",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 216,
+    "fields": {
+      "name": "Bacon",
+      "price": "5.99",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 217,
+    "fields": {
+      "name": "Ground Pork",
+      "price": "3.49",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 218,
+    "fields": {
+      "name": "Pork Loin",
+      "price": "2.99",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 219,
+    "fields": {
+      "name": "Sausage Links",
+      "price": "4.99",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 220,
+    "fields": {
+      "name": "Ham",
+      "price": "3.29",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 221,
+    "fields": {
+      "name": "Pork Belly",
+      "price": "5.49",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 222,
+    "fields": {
+      "name": "Pork Tenderloin",
+      "price": "6.99",
+      "shelf": 29
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 30,
+    "fields": {
+      "name": "Lamb",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 223,
+    "fields": {
+      "name": "Lamb Chops",
+      "price": "10.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 224,
+    "fields": {
+      "name": "Ground Lamb",
+      "price": "7.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 225,
+    "fields": {
+      "name": "Lamb Shank",
+      "price": "5.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 226,
+    "fields": {
+      "name": "Rack of Lamb",
+      "price": "14.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 227,
+    "fields": {
+      "name": "Leg of Lamb",
+      "price": "9.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 228,
+    "fields": {
+      "name": "Lamb Ribs",
+      "price": "8.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 229,
+    "fields": {
+      "name": "Lamb Shoulder",
+      "price": "6.99",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 230,
+    "fields": {
+      "name": "Lamb Stew Meat",
+      "price": "7.49",
+      "shelf": 30
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 31,
+    "fields": {
+      "name": "Seafood",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 231,
+    "fields": {
+      "name": "Salmon Fillet",
+      "price": "8.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 232,
+    "fields": {
+      "name": "Shrimp",
+      "price": "12.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 233,
+    "fields": {
+      "name": "Lobster Tails",
+      "price": "15.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 234,
+    "fields": {
+      "name": "Crab Legs",
+      "price": "18.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 235,
+    "fields": {
+      "name": "Tilapia Fillet",
+      "price": "6.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 236,
+    "fields": {
+      "name": "Cod Fillet",
+      "price": "7.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 237,
+    "fields": {
+      "name": "Clams",
+      "price": "4.99",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 238,
+    "fields": {
+      "name": "Mussels",
+      "price": "4.49",
+      "shelf": 31
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 32,
+    "fields": {
+      "name": "Fresh Fish",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 239,
+    "fields": {
+      "name": "Tuna Steak",
+      "price": "9.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 240,
+    "fields": {
+      "name": "Halibut Fillet",
+      "price": "14.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 241,
+    "fields": {
+      "name": "Trout",
+      "price": "7.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 242,
+    "fields": {
+      "name": "Swordfish Steak",
+      "price": "11.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 243,
+    "fields": {
+      "name": "Red Snapper",
+      "price": "8.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 244,
+    "fields": {
+      "name": "Mahi Mahi",
+      "price": "7.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 245,
+    "fields": {
+      "name": "Grouper",
+      "price": "13.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 246,
+    "fields": {
+      "name": "Sea Bass",
+      "price": "17.99",
+      "shelf": 32
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 33,
+    "fields": {
+      "name": "Shellfish",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 247,
+    "fields": {
+      "name": "Scallops",
+      "price": "19.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 248,
+    "fields": {
+      "name": "Oysters",
+      "price": "0.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 249,
+    "fields": {
+      "name": "King Crab Legs",
+      "price": "29.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 250,
+    "fields": {
+      "name": "Snow Crab Legs",
+      "price": "19.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 251,
+    "fields": {
+      "name": "Shucked Oysters",
+      "price": "12.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 252,
+    "fields": {
+      "name": "Live Lobsters",
+      "price": "14.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 253,
+    "fields": {
+      "name": "Prawns",
+      "price": "15.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 254,
+    "fields": {
+      "name": "Crayfish",
+      "price": "8.99",
+      "shelf": 33
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 34,
+    "fields": {
+      "name": "Marinated Meats",
+      "section": 4
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 255,
+    "fields": {
+      "name": "Marinated Chicken Breast",
+      "price": "4.99",
+      "shelf": 34
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 256,
+    "fields": {
+      "name": "Marinated Pork Ribs",
+      "price": "5.99",
+      "shelf": 34
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 257,
+    "fields": {
+      "name": "Marinated Beef Steaks",
+      "price": "7.99",
+      "shelf": 34
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 258,
+    "fields": {
+      "name": "Marinated Lamb Kebabs",
+      "price": "9.99",
+      "shelf": 34
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 259,
+    "fields": {
+      "name": "Marinated Shrimp",
+      "price": "14.99",
+      "shelf": 34
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 260,
+    "fields": {
+      "name": "Marinated Salmon",
+      "price": "10.99",
+      "shelf": 34
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 5,
+    "fields": {
+      "name": "Dairy"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 35,
+    "fields": {
+      "name": "Milk",
       "section": 5
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 45,
+    "pk": 261,
     "fields": {
-      "name": "Chicken Soup",
-      "shelf": 15
+      "name": "Whole Milk",
+      "price": "3.49",
+      "shelf": 35
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 46,
+    "pk": 262,
     "fields": {
-      "name": "Tomato Soup",
-      "shelf": 15
+      "name": "2% Milk",
+      "price": "3.29",
+      "shelf": 35
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 47,
+    "pk": 263,
     "fields": {
-      "name": "Beef Stew",
-      "shelf": 15
+      "name": "Skim Milk",
+      "price": "3.19",
+      "shelf": 35
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 264,
+    "fields": {
+      "name": "Chocolate Milk",
+      "price": "3.99",
+      "shelf": 35
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 265,
+    "fields": {
+      "name": "Almond Milk",
+      "price": "2.99",
+      "shelf": 35
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 266,
+    "fields": {
+      "name": "Soy Milk",
+      "price": "2.89",
+      "shelf": 35
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 267,
+    "fields": {
+      "name": "Oat Milk",
+      "price": "3.79",
+      "shelf": 35
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 268,
+    "fields": {
+      "name": "Coconut Milk",
+      "price": "3.49",
+      "shelf": 35
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 36,
+    "fields": {
+      "name": "Cheese",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 269,
+    "fields": {
+      "name": "Cheddar Cheese",
+      "price": "4.99",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 270,
+    "fields": {
+      "name": "Mozzarella Cheese",
+      "price": "5.49",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 271,
+    "fields": {
+      "name": "Parmesan Cheese",
+      "price": "6.99",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 272,
+    "fields": {
+      "name": "Goat Cheese",
+      "price": "7.49",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 273,
+    "fields": {
+      "name": "Blue Cheese",
+      "price": "8.99",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 274,
+    "fields": {
+      "name": "Gouda Cheese",
+      "price": "5.99",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 275,
+    "fields": {
+      "name": "Swiss Cheese",
+      "price": "5.49",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 276,
+    "fields": {
+      "name": "Feta Cheese",
+      "price": "6.29",
+      "shelf": 36
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 37,
+    "fields": {
+      "name": "Yogurt",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 277,
+    "fields": {
+      "name": "Greek Yogurt",
+      "price": "3.99",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 278,
+    "fields": {
+      "name": "Plain Yogurt",
+      "price": "2.99",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 279,
+    "fields": {
+      "name": "Flavored Yogurt",
+      "price": "4.49",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 280,
+    "fields": {
+      "name": "Non-Dairy Yogurt",
+      "price": "3.89",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 281,
+    "fields": {
+      "name": "Low-Fat Yogurt",
+      "price": "3.49",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 282,
+    "fields": {
+      "name": "Whole Milk Yogurt",
+      "price": "4.29",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 283,
+    "fields": {
+      "name": "Kefir",
+      "price": "4.99",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 284,
+    "fields": {
+      "name": "Icelandic Skyr",
+      "price": "5.29",
+      "shelf": 37
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 38,
+    "fields": {
+      "name": "Butter and Margarine",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 285,
+    "fields": {
+      "name": "Unsalted Butter",
+      "price": "3.99",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 286,
+    "fields": {
+      "name": "Salted Butter",
+      "price": "3.89",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 287,
+    "fields": {
+      "name": "Spreadable Butter",
+      "price": "4.49",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 288,
+    "fields": {
+      "name": "Light Butter",
+      "price": "2.99",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 289,
+    "fields": {
+      "name": "Vegan Butter",
+      "price": "5.49",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 290,
+    "fields": {
+      "name": "Margarine",
+      "price": "2.79",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 291,
+    "fields": {
+      "name": "Clarified Butter (Ghee)",
+      "price": "6.99",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 292,
+    "fields": {
+      "name": "Whipped Butter",
+      "price": "3.49",
+      "shelf": 38
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 39,
+    "fields": {
+      "name": "Eggs",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 293,
+    "fields": {
+      "name": "Large White Eggs",
+      "price": "2.69",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 294,
+    "fields": {
+      "name": "Large Brown Eggs",
+      "price": "2.99",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 295,
+    "fields": {
+      "name": "Organic Eggs",
+      "price": "4.49",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 296,
+    "fields": {
+      "name": "Free-Range Eggs",
+      "price": "3.99",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 297,
+    "fields": {
+      "name": "Egg Whites",
+      "price": "4.99",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 298,
+    "fields": {
+      "name": "Liquid Egg Substitute",
+      "price": "3.49",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 299,
+    "fields": {
+      "name": "Pasture-Raised Eggs",
+      "price": "5.29",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 300,
+    "fields": {
+      "name": "Omega-3 Enriched Eggs",
+      "price": "3.89",
+      "shelf": 39
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 40,
+    "fields": {
+      "name": "Cream and Creamers",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 301,
+    "fields": {
+      "name": "Heavy Cream",
+      "price": "3.99",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 302,
+    "fields": {
+      "name": "Half-and-Half",
+      "price": "2.49",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 303,
+    "fields": {
+      "name": "Whipping Cream",
+      "price": "3.49",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 304,
+    "fields": {
+      "name": "Light Cream",
+      "price": "2.99",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 305,
+    "fields": {
+      "name": "Coffee Creamer",
+      "price": "2.79",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 306,
+    "fields": {
+      "name": "Non-Dairy Creamer",
+      "price": "3.29",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 307,
+    "fields": {
+      "name": "Sour Cream",
+      "price": "1.99",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 308,
+    "fields": {
+      "name": "Creme Fraiche",
+      "price": "5.49",
+      "shelf": 40
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 41,
+    "fields": {
+      "name": "Cultured Dairy",
+      "section": 5
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 309,
+    "fields": {
+      "name": "Cottage Cheese",
+      "price": "2.99",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 310,
+    "fields": {
+      "name": "Sour Cream",
+      "price": "1.99",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 311,
+    "fields": {
+      "name": "Cream Cheese",
+      "price": "2.49",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 312,
+    "fields": {
+      "name": "Ricotta Cheese",
+      "price": "3.99",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 313,
+    "fields": {
+      "name": "Mascarpone",
+      "price": "4.89",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 314,
+    "fields": {
+      "name": "Buttermilk",
+      "price": "2.79",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 315,
+    "fields": {
+      "name": "Quark",
+      "price": "3.49",
+      "shelf": 41
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 316,
+    "fields": {
+      "name": "Labneh",
+      "price": "4.99",
+      "shelf": 41
     }
   },
   {
@@ -539,74 +3215,2545 @@
   },
   {
     "model": "ggrid.shelf",
-    "pk": 16,
+    "pk": 42,
     "fields": {
-      "name": "Vegetables",
+      "name": "Frozen Vegetables",
       "section": 6
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 48,
+    "pk": 317,
     "fields": {
-      "name": "Frozen Peas",
-      "shelf": 16
+      "name": "Mixed Vegetables",
+      "price": "2.99",
+      "shelf": 42
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 49,
+    "pk": 318,
     "fields": {
-      "name": "Frozen Corn",
-      "shelf": 16
+      "name": "Broccoli Florets",
+      "price": "2.49",
+      "shelf": 42
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 319,
+    "fields": {
+      "name": "Sweet Corn",
+      "price": "2.29",
+      "shelf": 42
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 320,
+    "fields": {
+      "name": "Peas",
+      "price": "1.99",
+      "shelf": 42
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 321,
+    "fields": {
+      "name": "Green Beans",
+      "price": "2.59",
+      "shelf": 42
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 322,
+    "fields": {
+      "name": "Spinach",
+      "price": "1.89",
+      "shelf": 42
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 323,
+    "fields": {
+      "name": "Brussels Sprouts",
+      "price": "3.49",
+      "shelf": 42
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 324,
+    "fields": {
+      "name": "Cauliflower",
+      "price": "2.39",
+      "shelf": 42
     }
   },
   {
     "model": "ggrid.shelf",
-    "pk": 17,
+    "pk": 43,
     "fields": {
-      "name": "Meals",
+      "name": "Frozen Fruits",
       "section": 6
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 50,
+    "pk": 325,
     "fields": {
-      "name": "Frozen Pizza",
-      "shelf": 17
+      "name": "Mixed Berries",
+      "price": "3.99",
+      "shelf": 43
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 51,
+    "pk": 326,
     "fields": {
-      "name": "Frozen Lasagna",
-      "shelf": 17
+      "name": "Strawberries",
+      "price": "3.49",
+      "shelf": 43
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 327,
+    "fields": {
+      "name": "Blueberries",
+      "price": "4.29",
+      "shelf": 43
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 328,
+    "fields": {
+      "name": "Mango Chunks",
+      "price": "3.59",
+      "shelf": 43
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 329,
+    "fields": {
+      "name": "Pineapple Chunks",
+      "price": "3.29",
+      "shelf": 43
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 330,
+    "fields": {
+      "name": "Dark Sweet Cherries",
+      "price": "4.99",
+      "shelf": 43
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 331,
+    "fields": {
+      "name": "Peach Slices",
+      "price": "3.89",
+      "shelf": 43
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 332,
+    "fields": {
+      "name": "Raspberry",
+      "price": "4.49",
+      "shelf": 43
     }
   },
   {
     "model": "ggrid.shelf",
-    "pk": 18,
+    "pk": 44,
     "fields": {
-      "name": "Desserts",
+      "name": "Ice Cream and Desserts",
       "section": 6
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 52,
+    "pk": 333,
     "fields": {
-      "name": "Ice Cream",
-      "shelf": 18
+      "name": "Vanilla Ice Cream",
+      "price": "4.99",
+      "shelf": 44
     }
   },
   {
     "model": "ggrid.category",
-    "pk": 53,
+    "pk": 334,
+    "fields": {
+      "name": "Chocolate Ice Cream",
+      "price": "5.29",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 335,
+    "fields": {
+      "name": "Gelato",
+      "price": "5.99",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 336,
+    "fields": {
+      "name": "Sorbet",
+      "price": "4.79",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 337,
     "fields": {
       "name": "Frozen Yogurt",
-      "shelf": 18
+      "price": "4.49",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 338,
+    "fields": {
+      "name": "Ice Cream Sandwiches",
+      "price": "3.99",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 339,
+    "fields": {
+      "name": "Frozen Cheesecake",
+      "price": "6.99",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 340,
+    "fields": {
+      "name": "Popsicles",
+      "price": "3.49",
+      "shelf": 44
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 45,
+    "fields": {
+      "name": "Frozen Meals",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 341,
+    "fields": {
+      "name": "Pizza",
+      "price": "5.99",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 342,
+    "fields": {
+      "name": "Lasagna",
+      "price": "7.99",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 343,
+    "fields": {
+      "name": "Macaroni and Cheese",
+      "price": "6.49",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 344,
+    "fields": {
+      "name": "Vegetarian Burgers",
+      "price": "4.99",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 345,
+    "fields": {
+      "name": "Chicken Tenders",
+      "price": "6.99",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 346,
+    "fields": {
+      "name": "Stir Fry Mixes",
+      "price": "4.89",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 347,
+    "fields": {
+      "name": "Burritos",
+      "price": "3.79",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 348,
+    "fields": {
+      "name": "Breakfast Sandwiches",
+      "price": "4.59",
+      "shelf": 45
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 46,
+    "fields": {
+      "name": "Frozen Seafood",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 349,
+    "fields": {
+      "name": "Shrimp",
+      "price": "8.99",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 350,
+    "fields": {
+      "name": "Fish Fillets",
+      "price": "7.49",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 351,
+    "fields": {
+      "name": "Scallops",
+      "price": "12.99",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 352,
+    "fields": {
+      "name": "Crab Cakes",
+      "price": "9.99",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 353,
+    "fields": {
+      "name": "Lobster Tails",
+      "price": "14.99",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 354,
+    "fields": {
+      "name": "Salmon Burgers",
+      "price": "8.49",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 355,
+    "fields": {
+      "name": "Tilapia",
+      "price": "6.99",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 356,
+    "fields": {
+      "name": "Cod",
+      "price": "7.99",
+      "shelf": 46
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 47,
+    "fields": {
+      "name": "Frozen Meat",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 357,
+    "fields": {
+      "name": "Chicken Breasts",
+      "price": "9.99",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 358,
+    "fields": {
+      "name": "Ground Beef",
+      "price": "4.99",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 359,
+    "fields": {
+      "name": "Pork Chops",
+      "price": "7.99",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 360,
+    "fields": {
+      "name": "Meatballs",
+      "price": "8.49",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 361,
+    "fields": {
+      "name": "Sausages",
+      "price": "5.99",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 362,
+    "fields": {
+      "name": "Turkey Burgers",
+      "price": "9.49",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 363,
+    "fields": {
+      "name": "Beef Patties",
+      "price": "10.99",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 364,
+    "fields": {
+      "name": "Duck",
+      "price": "12.99",
+      "shelf": 47
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 48,
+    "fields": {
+      "name": "Frozen Pizza",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 365,
+    "fields": {
+      "name": "Pepperoni Pizza",
+      "price": "5.99",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 366,
+    "fields": {
+      "name": "Cheese Pizza",
+      "price": "5.49",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 367,
+    "fields": {
+      "name": "Supreme Pizza",
+      "price": "6.99",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 368,
+    "fields": {
+      "name": "Margherita Pizza",
+      "price": "7.49",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 369,
+    "fields": {
+      "name": "BBQ Chicken Pizza",
+      "price": "6.49",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 370,
+    "fields": {
+      "name": "Veggie Pizza",
+      "price": "5.99",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 371,
+    "fields": {
+      "name": "Thin Crust Pizza",
+      "price": "4.99",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 372,
+    "fields": {
+      "name": "Deep Dish Pizza",
+      "price": "7.99",
+      "shelf": 48
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 49,
+    "fields": {
+      "name": "Frozen Bread and Dough",
+      "section": 6
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 373,
+    "fields": {
+      "name": "Bread Dough",
+      "price": "2.99",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 374,
+    "fields": {
+      "name": "Croissants",
+      "price": "4.49",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 375,
+    "fields": {
+      "name": "Bagels",
+      "price": "3.99",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 376,
+    "fields": {
+      "name": "Pita Bread",
+      "price": "2.79",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 377,
+    "fields": {
+      "name": "Pizza Dough",
+      "price": "3.49",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 378,
+    "fields": {
+      "name": "Dinner Rolls",
+      "price": "3.29",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 379,
+    "fields": {
+      "name": "Garlic Bread",
+      "price": "3.59",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 380,
+    "fields": {
+      "name": "Pie Crusts",
+      "price": "2.99",
+      "shelf": 49
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 7,
+    "fields": {
+      "name": "Dry Goods and Pantry"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 50,
+    "fields": {
+      "name": "Cereal and Breakfast Foods",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 381,
+    "fields": {
+      "name": "Oatmeal",
+      "price": "3.99",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 382,
+    "fields": {
+      "name": "Granola",
+      "price": "4.49",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 383,
+    "fields": {
+      "name": "Corn Flakes",
+      "price": "2.99",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 384,
+    "fields": {
+      "name": "Whole Grain Cereal",
+      "price": "3.89",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 385,
+    "fields": {
+      "name": "Instant Breakfast Mix",
+      "price": "4.99",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 386,
+    "fields": {
+      "name": "Pancake Mix",
+      "price": "2.79",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 387,
+    "fields": {
+      "name": "Breakfast Bars",
+      "price": "5.49",
+      "shelf": 50
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 51,
+    "fields": {
+      "name": "Pasta and Rice",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 388,
+    "fields": {
+      "name": "Spaghetti",
+      "price": "1.49",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 389,
+    "fields": {
+      "name": "Penne",
+      "price": "1.59",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 390,
+    "fields": {
+      "name": "Basmati Rice",
+      "price": "2.99",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 391,
+    "fields": {
+      "name": "Brown Rice",
+      "price": "2.49",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 392,
+    "fields": {
+      "name": "Risotto Rice",
+      "price": "3.99",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 393,
+    "fields": {
+      "name": "Whole Wheat Pasta",
+      "price": "1.89",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 394,
+    "fields": {
+      "name": "Ramen Noodles",
+      "price": "0.99",
+      "shelf": 51
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 52,
+    "fields": {
+      "name": "Canned Goods",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 395,
+    "fields": {
+      "name": "Diced Tomatoes",
+      "price": "0.99",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 396,
+    "fields": {
+      "name": "Black Beans",
+      "price": "1.19",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 397,
+    "fields": {
+      "name": "Corn",
+      "price": "0.89",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 398,
+    "fields": {
+      "name": "Chicken Broth",
+      "price": "2.29",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 399,
+    "fields": {
+      "name": "Tuna Fish",
+      "price": "1.99",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 400,
+    "fields": {
+      "name": "Chickpeas",
+      "price": "1.29",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 401,
+    "fields": {
+      "name": "Green Beans",
+      "price": "0.79",
+      "shelf": 52
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 53,
+    "fields": {
+      "name": "Oil and Vinegar",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 402,
+    "fields": {
+      "name": "Olive Oil",
+      "price": "8.99",
+      "shelf": 53
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 403,
+    "fields": {
+      "name": "Vegetable Oil",
+      "price": "2.99",
+      "shelf": 53
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 404,
+    "fields": {
+      "name": "Balsamic Vinegar",
+      "price": "5.99",
+      "shelf": 53
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 405,
+    "fields": {
+      "name": "Apple Cider Vinegar",
+      "price": "3.49",
+      "shelf": 53
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 406,
+    "fields": {
+      "name": "Coconut Oil",
+      "price": "6.49",
+      "shelf": 53
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 407,
+    "fields": {
+      "name": "Canola Oil",
+      "price": "2.79",
+      "shelf": 53
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 54,
+    "fields": {
+      "name": "Spices and Seasonings",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 408,
+    "fields": {
+      "name": "Sea Salt",
+      "price": "2.49",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 409,
+    "fields": {
+      "name": "Black Pepper",
+      "price": "3.19",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 410,
+    "fields": {
+      "name": "Cinnamon",
+      "price": "2.99",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 411,
+    "fields": {
+      "name": "Curry Powder",
+      "price": "3.59",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 412,
+    "fields": {
+      "name": "Paprika",
+      "price": "2.89",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 413,
+    "fields": {
+      "name": "Garlic Powder",
+      "price": "2.79",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 414,
+    "fields": {
+      "name": "Oregano",
+      "price": "1.99",
+      "shelf": 54
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 55,
+    "fields": {
+      "name": "Baking Ingredients",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 415,
+    "fields": {
+      "name": "Flour",
+      "price": "2.29",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 416,
+    "fields": {
+      "name": "Sugar",
+      "price": "2.49",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 417,
+    "fields": {
+      "name": "Baking Soda",
+      "price": "0.99",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 418,
+    "fields": {
+      "name": "Baking Powder",
+      "price": "1.29",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 419,
+    "fields": {
+      "name": "Vanilla Extract",
+      "price": "4.99",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 420,
+    "fields": {
+      "name": "Cocoa Powder",
+      "price": "3.49",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 421,
+    "fields": {
+      "name": "Yeast",
+      "price": "1.49",
+      "shelf": 55
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 56,
+    "fields": {
+      "name": "Snacks",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 422,
+    "fields": {
+      "name": "Potato Chips",
+      "price": "3.49",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 423,
+    "fields": {
+      "name": "Pretzels",
+      "price": "2.99",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 424,
+    "fields": {
+      "name": "Popcorn",
+      "price": "1.99",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 425,
+    "fields": {
+      "name": "Trail Mix",
+      "price": "4.99",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 426,
+    "fields": {
+      "name": "Energy Bars",
+      "price": "1.49",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 427,
+    "fields": {
+      "name": "Cookies",
+      "price": "3.59",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 428,
+    "fields": {
+      "name": "Chocolate Bars",
+      "price": "1.99",
+      "shelf": 56
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 57,
+    "fields": {
+      "name": "Coffee and Tea",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 429,
+    "fields": {
+      "name": "Ground Coffee",
+      "price": "7.99",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 430,
+    "fields": {
+      "name": "Green Tea",
+      "price": "4.49",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 431,
+    "fields": {
+      "name": "Herbal Tea",
+      "price": "3.99",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 432,
+    "fields": {
+      "name": "Black Tea",
+      "price": "3.49",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 433,
+    "fields": {
+      "name": "Coffee Pods",
+      "price": "6.99",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 434,
+    "fields": {
+      "name": "Loose Leaf Tea",
+      "price": "5.29",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 435,
+    "fields": {
+      "name": "Espresso Beans",
+      "price": "8.49",
+      "shelf": 57
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 58,
+    "fields": {
+      "name": "Sauces and Condiments",
+      "section": 7
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 436,
+    "fields": {
+      "name": "Tomato Sauce",
+      "price": "1.99",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 437,
+    "fields": {
+      "name": "Mustard",
+      "price": "1.49",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 438,
+    "fields": {
+      "name": "Ketchup",
+      "price": "2.29",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 439,
+    "fields": {
+      "name": "Soy Sauce",
+      "price": "2.99",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 440,
+    "fields": {
+      "name": "Hot Sauce",
+      "price": "3.49",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 441,
+    "fields": {
+      "name": "Barbecue Sauce",
+      "price": "2.79",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 442,
+    "fields": {
+      "name": "Mayonnaise",
+      "price": "3.89",
+      "shelf": 58
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 8,
+    "fields": {
+      "name": "Beverages"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 59,
+    "fields": {
+      "name": "Water",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 443,
+    "fields": {
+      "name": "Spring Water",
+      "price": "0.99",
+      "shelf": 59
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 444,
+    "fields": {
+      "name": "Mineral Water",
+      "price": "1.49",
+      "shelf": 59
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 445,
+    "fields": {
+      "name": "Sparkling Water",
+      "price": "1.29",
+      "shelf": 59
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 446,
+    "fields": {
+      "name": "Flavored Water",
+      "price": "1.09",
+      "shelf": 59
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 60,
+    "fields": {
+      "name": "Soft Drinks",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 447,
+    "fields": {
+      "name": "Cola",
+      "price": "1.29",
+      "shelf": 60
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 448,
+    "fields": {
+      "name": "Diet Soda",
+      "price": "1.19",
+      "shelf": 60
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 449,
+    "fields": {
+      "name": "Root Beer",
+      "price": "1.29",
+      "shelf": 60
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 450,
+    "fields": {
+      "name": "Ginger Ale",
+      "price": "1.09",
+      "shelf": 60
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 451,
+    "fields": {
+      "name": "Lemon-Lime Soda",
+      "price": "1.19",
+      "shelf": 60
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 61,
+    "fields": {
+      "name": "Juice",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 452,
+    "fields": {
+      "name": "Orange Juice",
+      "price": "3.49",
+      "shelf": 61
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 453,
+    "fields": {
+      "name": "Apple Juice",
+      "price": "2.99",
+      "shelf": 61
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 454,
+    "fields": {
+      "name": "Cranberry Juice",
+      "price": "3.99",
+      "shelf": 61
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 455,
+    "fields": {
+      "name": "Grape Juice",
+      "price": "3.29",
+      "shelf": 61
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 456,
+    "fields": {
+      "name": "Tomato Juice",
+      "price": "2.79",
+      "shelf": 61
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 62,
+    "fields": {
+      "name": "Coffee",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 457,
+    "fields": {
+      "name": "Ground Coffee",
+      "price": "7.99",
+      "shelf": 62
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 458,
+    "fields": {
+      "name": "Whole Bean Coffee",
+      "price": "8.49",
+      "shelf": 62
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 459,
+    "fields": {
+      "name": "Instant Coffee",
+      "price": "4.99",
+      "shelf": 62
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 460,
+    "fields": {
+      "name": "Coffee Pods",
+      "price": "6.99",
+      "shelf": 62
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 63,
+    "fields": {
+      "name": "Tea",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 461,
+    "fields": {
+      "name": "Black Tea",
+      "price": "3.49",
+      "shelf": 63
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 462,
+    "fields": {
+      "name": "Green Tea",
+      "price": "4.49",
+      "shelf": 63
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 463,
+    "fields": {
+      "name": "Herbal Tea",
+      "price": "3.99",
+      "shelf": 63
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 464,
+    "fields": {
+      "name": "Chai",
+      "price": "4.99",
+      "shelf": 63
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 64,
+    "fields": {
+      "name": "Energy Drinks",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 465,
+    "fields": {
+      "name": "Energy Drink",
+      "price": "2.49",
+      "shelf": 64
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 466,
+    "fields": {
+      "name": "Sports Drink",
+      "price": "1.99",
+      "shelf": 64
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 467,
+    "fields": {
+      "name": "Electrolyte Beverage",
+      "price": "2.29",
+      "shelf": 64
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 468,
+    "fields": {
+      "name": "Energy Shot",
+      "price": "2.99",
+      "shelf": 64
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 65,
+    "fields": {
+      "name": "Alcoholic Beverages",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 469,
+    "fields": {
+      "name": "Beer",
+      "price": "1.49",
+      "shelf": 65
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 470,
+    "fields": {
+      "name": "Wine",
+      "price": "9.99",
+      "shelf": 65
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 471,
+    "fields": {
+      "name": "Spirits",
+      "price": "15.99",
+      "shelf": 65
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 472,
+    "fields": {
+      "name": "Hard Seltzer",
+      "price": "8.99",
+      "shelf": 65
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 66,
+    "fields": {
+      "name": "Dairy Alternatives",
+      "section": 8
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 473,
+    "fields": {
+      "name": "Almond Milk",
+      "price": "2.99",
+      "shelf": 66
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 474,
+    "fields": {
+      "name": "Soy Milk",
+      "price": "2.89",
+      "shelf": 66
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 475,
+    "fields": {
+      "name": "Coconut Milk",
+      "price": "3.49",
+      "shelf": 66
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 476,
+    "fields": {
+      "name": "Oat Milk",
+      "price": "3.79",
+      "shelf": 66
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 9,
+    "fields": {
+      "name": "Health and Beauty"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 67,
+    "fields": {
+      "name": "Personal Care",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 477,
+    "fields": {
+      "name": "Shampoo",
+      "price": "4.99",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 478,
+    "fields": {
+      "name": "Conditioner",
+      "price": "4.99",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 479,
+    "fields": {
+      "name": "Body Wash",
+      "price": "5.49",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 480,
+    "fields": {
+      "name": "Bar Soap",
+      "price": "1.99",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 481,
+    "fields": {
+      "name": "Deodorant",
+      "price": "3.49",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 482,
+    "fields": {
+      "name": "Toothpaste",
+      "price": "2.99",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 483,
+    "fields": {
+      "name": "Mouthwash",
+      "price": "4.29",
+      "shelf": 67
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 68,
+    "fields": {
+      "name": "Skin Care",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 484,
+    "fields": {
+      "name": "Facial Cleanser",
+      "price": "6.99",
+      "shelf": 68
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 485,
+    "fields": {
+      "name": "Moisturizer",
+      "price": "8.49",
+      "shelf": 68
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 486,
+    "fields": {
+      "name": "Sunscreen",
+      "price": "7.99",
+      "shelf": 68
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 487,
+    "fields": {
+      "name": "Acne Treatment",
+      "price": "9.49",
+      "shelf": 68
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 488,
+    "fields": {
+      "name": "Anti-Aging Cream",
+      "price": "15.99",
+      "shelf": 68
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 489,
+    "fields": {
+      "name": "Body Lotion",
+      "price": "5.99",
+      "shelf": 68
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 69,
+    "fields": {
+      "name": "Hair Care",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 490,
+    "fields": {
+      "name": "Hair Dye",
+      "price": "6.99",
+      "shelf": 69
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 491,
+    "fields": {
+      "name": "Styling Gel",
+      "price": "4.49",
+      "shelf": 69
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 492,
+    "fields": {
+      "name": "Hairspray",
+      "price": "5.29",
+      "shelf": 69
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 493,
+    "fields": {
+      "name": "Hair Mask",
+      "price": "7.99",
+      "shelf": 69
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 494,
+    "fields": {
+      "name": "Leave-In Conditioner",
+      "price": "6.49",
+      "shelf": 69
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 495,
+    "fields": {
+      "name": "Dry Shampoo",
+      "price": "5.99",
+      "shelf": 69
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 70,
+    "fields": {
+      "name": "Oral Care",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 496,
+    "fields": {
+      "name": "Toothbrush",
+      "price": "2.99",
+      "shelf": 70
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 497,
+    "fields": {
+      "name": "Toothpaste",
+      "price": "2.99",
+      "shelf": 70
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 498,
+    "fields": {
+      "name": "Dental Floss",
+      "price": "3.49",
+      "shelf": 70
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 499,
+    "fields": {
+      "name": "Mouthwash",
+      "price": "4.29",
+      "shelf": 70
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 500,
+    "fields": {
+      "name": "Teeth Whitening Strips",
+      "price": "19.99",
+      "shelf": 70
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 71,
+    "fields": {
+      "name": "Feminine Products",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 501,
+    "fields": {
+      "name": "Sanitary Pads",
+      "price": "5.49",
+      "shelf": 71
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 502,
+    "fields": {
+      "name": "Tampons",
+      "price": "6.99",
+      "shelf": 71
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 503,
+    "fields": {
+      "name": "Menstrual Cup",
+      "price": "29.99",
+      "shelf": 71
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 504,
+    "fields": {
+      "name": "Panty Liners",
+      "price": "4.49",
+      "shelf": 71
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 72,
+    "fields": {
+      "name": "Healthcare",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 505,
+    "fields": {
+      "name": "First Aid Kit",
+      "price": "9.99",
+      "shelf": 72
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 506,
+    "fields": {
+      "name": "Pain Reliever",
+      "price": "4.99",
+      "shelf": 72
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 507,
+    "fields": {
+      "name": "Cold and Flu Medicine",
+      "price": "6.49",
+      "shelf": 72
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 508,
+    "fields": {
+      "name": "Allergy Relief",
+      "price": "12.99",
+      "shelf": 72
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 509,
+    "fields": {
+      "name": "Band-Aids",
+      "price": "2.49",
+      "shelf": 72
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 73,
+    "fields": {
+      "name": "Dietary Supplements",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 510,
+    "fields": {
+      "name": "Multivitamins",
+      "price": "14.99",
+      "shelf": 73
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 511,
+    "fields": {
+      "name": "Protein Powder",
+      "price": "19.99",
+      "shelf": 73
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 512,
+    "fields": {
+      "name": "Omega-3 Supplements",
+      "price": "17.99",
+      "shelf": 73
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 513,
+    "fields": {
+      "name": "Vitamin D",
+      "price": "9.99",
+      "shelf": 73
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 514,
+    "fields": {
+      "name": "Probiotics",
+      "price": "16.99",
+      "shelf": 73
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 74,
+    "fields": {
+      "name": "Baby Care",
+      "section": 9
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 515,
+    "fields": {
+      "name": "Diapers",
+      "price": "24.99",
+      "shelf": 74
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 516,
+    "fields": {
+      "name": "Baby Wipes",
+      "price": "5.99",
+      "shelf": 74
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 517,
+    "fields": {
+      "name": "Baby Shampoo",
+      "price": "4.99",
+      "shelf": 74
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 518,
+    "fields": {
+      "name": "Baby Lotion",
+      "price": "7.49",
+      "shelf": 74
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 519,
+    "fields": {
+      "name": "Baby Formula",
+      "price": "16.99",
+      "shelf": 74
+    }
+  },
+  {
+    "model": "ggrid.section",
+    "pk": 10,
+    "fields": {
+      "name": "Household Essentials"
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 75,
+    "fields": {
+      "name": "Cleaning Supplies",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 520,
+    "fields": {
+      "name": "All-Purpose Cleaner",
+      "price": "3.99",
+      "shelf": 75
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 521,
+    "fields": {
+      "name": "Glass Cleaner",
+      "price": "2.99",
+      "shelf": 75
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 522,
+    "fields": {
+      "name": "Disinfectant Wipes",
+      "price": "4.49",
+      "shelf": 75
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 523,
+    "fields": {
+      "name": "Bathroom Cleaner",
+      "price": "3.89",
+      "shelf": 75
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 524,
+    "fields": {
+      "name": "Floor Cleaner",
+      "price": "5.99",
+      "shelf": 75
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 525,
+    "fields": {
+      "name": "Furniture Polish",
+      "price": "4.79",
+      "shelf": 75
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 76,
+    "fields": {
+      "name": "Laundry Products",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 526,
+    "fields": {
+      "name": "Laundry Detergent",
+      "price": "9.99",
+      "shelf": 76
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 527,
+    "fields": {
+      "name": "Fabric Softener",
+      "price": "6.99",
+      "shelf": 76
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 528,
+    "fields": {
+      "name": "Bleach",
+      "price": "3.49",
+      "shelf": 76
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 529,
+    "fields": {
+      "name": "Stain Remover",
+      "price": "4.99",
+      "shelf": 76
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 530,
+    "fields": {
+      "name": "Dryer Sheets",
+      "price": "4.49",
+      "shelf": 76
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 531,
+    "fields": {
+      "name": "Laundry Pods",
+      "price": "10.99",
+      "shelf": 76
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 77,
+    "fields": {
+      "name": "Paper Goods",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 532,
+    "fields": {
+      "name": "Paper Towels",
+      "price": "1.99",
+      "shelf": 77
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 533,
+    "fields": {
+      "name": "Toilet Paper",
+      "price": "0.89",
+      "shelf": 77
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 534,
+    "fields": {
+      "name": "Facial Tissues",
+      "price": "1.29",
+      "shelf": 77
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 535,
+    "fields": {
+      "name": "Napkins",
+      "price": "2.49",
+      "shelf": 77
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 78,
+    "fields": {
+      "name": "Air Fresheners",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 536,
+    "fields": {
+      "name": "Spray Air Freshener",
+      "price": "2.99",
+      "shelf": 78
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 537,
+    "fields": {
+      "name": "Plug-In Air Freshener",
+      "price": "4.99",
+      "shelf": 78
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 538,
+    "fields": {
+      "name": "Candles",
+      "price": "5.99",
+      "shelf": 78
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 539,
+    "fields": {
+      "name": "Reed Diffusers",
+      "price": "7.49",
+      "shelf": 78
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 540,
+    "fields": {
+      "name": "Car Air Freshener",
+      "price": "3.49",
+      "shelf": 78
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 79,
+    "fields": {
+      "name": "Light Bulbs",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 541,
+    "fields": {
+      "name": "LED Bulbs",
+      "price": "5.99",
+      "shelf": 79
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 542,
+    "fields": {
+      "name": "Incandescent Bulbs",
+      "price": "2.49",
+      "shelf": 79
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 543,
+    "fields": {
+      "name": "Halogen Bulbs",
+      "price": "3.99",
+      "shelf": 79
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 544,
+    "fields": {
+      "name": "Smart Light Bulbs",
+      "price": "14.99",
+      "shelf": 79
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 545,
+    "fields": {
+      "name": "Fluorescent Tubes",
+      "price": "7.99",
+      "shelf": 79
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 80,
+    "fields": {
+      "name": "Batteries",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 546,
+    "fields": {
+      "name": "AA Batteries",
+      "price": "4.99",
+      "shelf": 80
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 547,
+    "fields": {
+      "name": "AAA Batteries",
+      "price": "4.99",
+      "shelf": 80
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 548,
+    "fields": {
+      "name": "9V Batteries",
+      "price": "5.49",
+      "shelf": 80
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 549,
+    "fields": {
+      "name": "Rechargeable Batteries",
+      "price": "8.99",
+      "shelf": 80
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 550,
+    "fields": {
+      "name": "Button Cell Batteries",
+      "price": "2.99",
+      "shelf": 80
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 81,
+    "fields": {
+      "name": "Trash Bags",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 551,
+    "fields": {
+      "name": "Kitchen Trash Bags",
+      "price": "5.49",
+      "shelf": 81
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 552,
+    "fields": {
+      "name": "Heavy Duty Trash Bags",
+      "price": "6.99",
+      "shelf": 81
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 553,
+    "fields": {
+      "name": "Recycling Bags",
+      "price": "4.99",
+      "shelf": 81
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 554,
+    "fields": {
+      "name": "Compostable Trash Bags",
+      "price": "5.99",
+      "shelf": 81
+    }
+  },
+  {
+    "model": "ggrid.shelf",
+    "pk": 82,
+    "fields": {
+      "name": "Pest Control",
+      "section": 10
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 555,
+    "fields": {
+      "name": "Ant Killer",
+      "price": "4.49",
+      "shelf": 82
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 556,
+    "fields": {
+      "name": "Roach Spray",
+      "price": "5.99",
+      "shelf": 82
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 557,
+    "fields": {
+      "name": "Mouse Traps",
+      "price": "6.49",
+      "shelf": 82
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 558,
+    "fields": {
+      "name": "Insect Repellent",
+      "price": "7.99",
+      "shelf": 82
+    }
+  },
+  {
+    "model": "ggrid.category",
+    "pk": 559,
+    "fields": {
+      "name": "Moth Balls",
+      "price": "3.99",
+      "shelf": 82
     }
   }
 ]

@@ -28,7 +28,10 @@ SECRET_KEY = 'django-insecure-pzbz1*hzk@m5d-_19@)#$tx#+&_k&#j@8a-!9#^=&mr=2n9+11
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['grocerygenius-c328c9299cb8.herokuapp.com']
+ALLOWED_HOSTS = ['grocerygenius-c328c9299cb8.herokuapp.com',
+                 'www.grocery-genie.com',
+                 'grocerie-genie.com',
+                 '127.0.0.1']
 
 
 # Application definition
@@ -55,6 +58,9 @@ MIDDLEWARE = [
 ]
 
 STORAGES = {
+    "default": {
+        "BACKEND": "storages.backends.s3.S3Storage"
+    },
     "staticfiles": {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
@@ -128,6 +134,8 @@ USE_TZ = True
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATIC_URL = 'static/'
+
+MEDIA_URL = 'https://grocerygenius.s3.us-east-2.amazonaws.com/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

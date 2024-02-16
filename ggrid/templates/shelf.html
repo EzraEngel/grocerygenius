@@ -12,7 +12,13 @@
     	.highlight {
 		  border: 2px solid yellow; /* Or any other style you prefer for highlighting */
 		  box-shadow: 0 0 10px yellow; /* Optional: adds a shadow for more emphasis */
-		}
+		  }
+		  .card-img {
+		  height: 27vh; /* Fixed height */
+		  background-size: cover; /* Cover the entire area */
+		  background-position: center; /* Center the background image */
+		  width: 100%; /* Ensure the image container fills the card width */
+		  }
     </style>
 
     <title>{{category.name}}</title>
@@ -24,7 +30,7 @@
     <div class="container-fluid bg-dark" style="height: 100vh">
     	<div class="row">
 		    <div class="col-sm-9">
-		    	<div class="row p-3">
+		    	<div class="row pt-3 pr-3">
 		    		<div class="col-8 text-light">
 		    			<h1>{{shelf.section.name}} / {{shelf.name}}</h1>
 		    		</div>
@@ -33,14 +39,14 @@
 		    		</div>
 		    	</div>
 				{% for row in category_grid %}
-				<div class="card-group p-3">
+				<div class="card-group p-2">
 					{% for category in row %}
-					<div class="col-sm-3">
+					<div class="col-sm-4">
 						<div class="card" id="{{ category.1 }}" category-pk="{{category.0.id}}">
-						  <img class="card-img" src="{% static 'place_holder.svg' %}" alt="Card image">
+						  <img class="card-img" src="https://grocerygenius.s3.us-east-2.amazonaws.com/{{category.0.id}}.jpg" alt="Card image">
 						  <div class="card-img-overlay">
-						    <h6 class="card-text"><span class="badge badge-dark">{{category.0.name}}</span></h6>
-						    <h6 class="price"><span class="badge badge-warning">{{category.0.price}}</span></h6>
+						    <h4 class="card-text"><span class="badge badge-dark">{{category.0.name}}</span></h4>
+						    <h5 class="price"><span class="badge badge-warning">{{category.0.price}}</span></h5>
 						  </div>
 						</div>	
 					</div>
@@ -59,7 +65,7 @@
 					</div>
 				</div>
 				<div class="col-sm-12 grocery-cart">
-					{% for key, value in cart_dict.items %}<div data-item-name="{{ value.0 }}" category-pk="{{ key }}" class="cart-item p-1 text-light h5" price="1.99"> {{value.0}}: {{value.1}}</div>{% endfor %}
+					{% for key, value in cart_dict.items %}<div data-item-name="{{ value.0 }}" category-pk="{{ key }}" class="cart-item p-1 text-light h5" price={{value.1}}> {{value.0}}: {{value.2}}</div>{% endfor %}
 				</div>
 			</div>
 		</div>
