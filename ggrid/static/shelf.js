@@ -68,7 +68,7 @@ function highlightCard(id) {
     newHighlightCard.classList.add('highlight');
   }
 }
-});
+}); 
 
 
 document.addEventListener('keydown', function(e) {

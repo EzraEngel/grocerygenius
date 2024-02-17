@@ -17,12 +17,33 @@
     <div class="container-fluid bg-dark" style="height: 100vh">
     	<div class=row>
     		<div class="col-sm-3"></div>
-    		<div class="col-sm-6 bg-light m-5 p-3 text-center">
-    			<h1>Welcome</h1>
-    			<h6>This is a prototype interface for a new way to shop for groceries. Please read the instructions below before continuing as data will be analyzed to make further improvements to the design. </h6><br>
-    			<form action="{% url 'index' %}" method="post">
+    		<div class="col-sm-6 bg-light m-5 p-3 rounded">
+    			<h1 class="text-center">Welcome</h1>
+    			<h5>This is a prototype interface for a new way to shop for groceries. Please read the instructions below before continuing as data will be analyzed to make further improvements to the design.</h5>
+          <h6 class="text-primary"><span class="font-weight-bold">Instructions.</span>This prototype has 555 product categories organized into 82 shelves and 10 departments. The goal of this exercise is to browse through the inventory in the same way that you might do in a phyiscal store. You can can navigate and build your cart using the keyboard commands below. Try to move through the mock storefront deliberately and quickly, so that we get a good sense of how long navigation takes under realistic conditions. When you complete browsing, you'll be prompted to complete a survey about your experience.</h6>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 bg-info align-self-center text-light rounded pt-2">
+              <h5 class="text-center font-weight-bold">Keyboard Controls</h5>
+              <ul>
+                <li><span class="font-weight-bold">Up:</span> Navigate up</li>
+                <li><span class="font-weight-bold">Down:</span> Navigate down</li>
+                <li><span class="font-weight-bold">Right:</span> Navigate right</li>
+                <li><span class="font-weight-bold">Left:</span> Navigate left</li>
+                <li><span class="font-weight-bold">Space:</span> Add selected item to cart</li>
+                <li><span class="font-weight-bold">Backspace:</span> Remove selected item to cart</li>
+                <li><span class="font-weight-bold">Escape:</span> Switch to cart navigation</li>
+                <li><span class="font-weight-bold">Tab:</span> Go to next section</li>
+                <li><span class="font-weight-bold">Shift+Tab:</span> Go to previous section</li>
+              </ul>
+            </div>
+          </div>
+          <br>
+      <div class="callout callout-info text-left">
+            <p><span class="font-weight-bold text-info">Participant Consent.</span> Thank you so much for being here. Your participation in this study is completely voluntary, and you are free to leave at any time. All data that we collect from your trial here will be completely anonymous, and will be aggregated to determine overall usage trends and areas for interface improvement. Please hit the <span class="badge badge-success">Enter</span> button below and enjoy the site if you're cool with all of that.</p>
+      </div>
+    			<form action="{% url 'index' %}" method="post" class="text-center">
 					  {% csrf_token %}
-					  <button type="submit" class="btn btn-success">Enter</button>
+					  <button type="submit" class="btn btn-success" id="myButton">Enter</button>
 					</form>
     		</div>
     	</div>
@@ -34,5 +55,37 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      // Function to check window size and disable button if window width is less than 1024px
+      function checkWindowSizeAndDisableButton() {
+          // Assuming 1024px is the minimum width for a standard computer screen
+          const minWidth = 1024;
+          const myButton = document.getElementById('myButton');
+          // Use a flag to ensure the alert is shown only once when the threshold is crossed
+          if (!window.alertShown && window.innerWidth < minWidth) {
+              // Disable the button if the window size is smaller than 1024px
+              myButton.disabled = true;
+              // Show an alert to the user
+              alert("The application won't work on a screen smaller than a standard computer size (1024px) and requires a keyboard. Please resize your window or try logging on with a computer.");
+              // Set the flag so that the alert isn't shown again on subsequent checks
+              window.alertShown = true;
+          } else if (window.innerWidth >= minWidth) {
+              // Enable the button if the window size is equal to or larger than 1024px
+              myButton.disabled = false;
+              // Reset the flag when the window is resized back to a valid width
+              window.alertShown = false;
+          }
+      }
+
+      // Initialize the alertShown flag to false
+      window.alertShown = false;
+
+      // Run the function on initial load
+      checkWindowSizeAndDisableButton();
+
+      // Add event listener to run the function whenever the window is resized
+      window.addEventListener('resize', checkWindowSizeAndDisableButton);
+
+    </script>
   </body>
 </html>

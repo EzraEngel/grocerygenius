@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, authenticate, login
-from .models import Category, Shelf, Cart, CartItem, KeyStroke
+from .models import Category, Shelf, Cart, CartItem, KeyStroke, Section
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 import random as rd
@@ -95,7 +95,7 @@ def fetch_image(query, pk):
 
 
 def gen_images(request):
-	for category in Category.objects.all()[109:]:
-	    time.sleep(75)
-	    fetch_image(category.name, category.id)
-	return HttpResponse("You generated some images.")
+	# for category in Category.objects.all()[24:43]:
+	#     time.sleep(1)
+	#     fetch_image(category.name, category.id)
+	return HttpResponse("You're not supposed to be here.")
