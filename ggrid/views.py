@@ -55,6 +55,19 @@ def shelf(request, shelf_id):
 			return HttpResponseRedirect(reverse('complete'))
 		shelf_count = Shelf.objects.all().count()
 		category_list = Category.objects.filter(shelf=shelf_id)
+		shelf = Shelf.objects.get(pk=shelf_id)
+		section_id = shelf.section.id
+		previous_section = section_id-1
+
+		if previous_section < 1:
+			previous_section = 1
+		previous_shelf = Shelf.objects.filter(section=previous_section).first().id
+
+		next_section = section_id + 1
+		if next_section > 10:
+			next_shelf = 999
+		else:
+			next_shelf = Shelf.objects.filter(section=next_section).first().id
 		category_grid = []
 		for i, c in enumerate(category_list):
 			if i%3 == 0:
@@ -65,7 +78,9 @@ def shelf(request, shelf_id):
 			"shelf": Shelf.objects.get(pk=shelf_id),
 			"shelf_count": shelf_count,
 			"cart_dict": request.user.cart.summary(),
-			"cart_tot": '{:.2f}'.format(request.user.cart.total())
+			"cart_tot": '{:.2f}'.format(request.user.cart.total()),
+			"next_shelf": next_shelf,
+			"previous_shelf": previous_shelf
 		}
 	return render(request, "shelf.html", context)
 

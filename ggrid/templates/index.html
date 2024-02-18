@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+
     <title>Welcome</title>
   </head>
   <body>
@@ -20,26 +21,24 @@
     		<div class="col-sm-6 bg-light m-5 p-3 rounded">
     			<h1 class="text-center">Welcome</h1>
     			<h5>This is a prototype interface for a new way to shop for groceries. Please read the instructions below before continuing as data will be analyzed to make further improvements to the design.</h5>
-          <h6 class="text-primary"><span class="font-weight-bold">Instructions.</span>This prototype has 555 product categories organized into 82 shelves and 10 departments. The goal of this exercise is to browse through the inventory in the same way that you might do in a phyiscal store. You can can navigate and build your cart using the keyboard commands below. Try to move through the mock storefront deliberately and quickly, so that we get a good sense of how long navigation takes under realistic conditions. When you complete browsing, you'll be prompted to complete a survey about your experience.</h6>
+          <h6 class="text-primary"><span class="font-weight-bold">Instructions.</span>The goal of this exercise is to browse through the inventory in the same way that you might do in a phyiscal store. You can can navigate and build your cart using the commands below. Try to move through the mock storefront deliberately and quickly, so that we get a good sense of how long navigation takes under realistic conditions. When you complete browsing, you'll be prompted to complete a survey about your experience.</h6>
           <div class="row justify-content-center">
             <div class="col-sm-6 bg-info align-self-center text-light rounded pt-2">
               <h5 class="text-center font-weight-bold">Keyboard Controls</h5>
               <ul>
-                <li><span class="font-weight-bold">Up:</span> Navigate up</li>
-                <li><span class="font-weight-bold">Down:</span> Navigate down</li>
-                <li><span class="font-weight-bold">Right:</span> Navigate right</li>
-                <li><span class="font-weight-bold">Left:</span> Navigate left</li>
+                <li><span class="font-weight-bold">Arrow Keys:</span> Navigate between items</li>
+                <li><span class="font-weight-bold">Mouse Click:</span> Select and add item to cart</li>
                 <li><span class="font-weight-bold">Space:</span> Add selected item to cart</li>
                 <li><span class="font-weight-bold">Backspace:</span> Remove selected item to cart</li>
                 <li><span class="font-weight-bold">Escape:</span> Switch to cart navigation</li>
-                <li><span class="font-weight-bold">Tab:</span> Go to next section</li>
-                <li><span class="font-weight-bold">Shift+Tab:</span> Go to previous section</li>
+                <li><span class="font-weight-bold">Tab <span class="text-warning">(+Shift)</span>:</span> Go to next <span class="text-warning">(previous)</span> shelf</li>
+                <li><span class="font-weight-bold">Enter <span class="text-warning">(+Shift)</span>:</span> Go to next <span class="text-warning">(previous)</span> section</li>
               </ul>
             </div>
           </div>
           <br>
       <div class="callout callout-info text-left">
-            <p><span class="font-weight-bold text-info">Participant Consent.</span> Thank you so much for being here. Your participation in this study is completely voluntary, and you are free to leave at any time. All data that we collect from your trial here will be completely anonymous, and will be aggregated to determine overall usage trends and areas for interface improvement. Please hit the <span class="badge badge-success">Enter</span> button below and enjoy the site if you're cool with all of that.</p>
+            <p><span class="font-weight-bold text-info">Participant Consent.</span> Your participation in this study is completely voluntary, and you are free to leave at any time. All data that we collect from your trial here will be completely anonymous, and will be aggregated to determine overall usage trends and areas for interface improvement. Please hit the <span class="badge badge-success">Enter</span> button below and enjoy the site if you're cool with all of that.</p>
       </div>
     			<form action="{% url 'index' %}" method="post" class="text-center">
 					  {% csrf_token %}

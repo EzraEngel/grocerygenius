@@ -149,27 +149,6 @@ if (e.key === 'Enter') {
 }
 });
 
-document.addEventListener('keydown', function(e) {
-if (e.key === 'Enter' && e.shiftKey) {
-  e.preventDefault(); // Prevent the default tab behavior (focus next element)
-  
-  // Parse the current URL to find the current shelf ID
-  const currentUrl = window.location.href;
-  const shelfIdMatch = currentUrl.match(/\/ggrid\/(\d+)\//);
-
-  let nextShelfId = document.getElementById('section-header').getAttribute('previous-shelf');
-
-
-  if (shelfIdMatch) {
-    // Construct the URL for the next shelf
-    const nextUrl = currentUrl.replace(/\/ggrid\/\d+\//, `/ggrid/${nextShelfId}/`);
-
-    // Redirect to the next shelf URL
-    window.location.href = nextUrl;
-  }
-}
-});
-
 
 document.addEventListener('keydown', function(e) {
   if (e.key === ' ') { // Check if spacebar is pressed
