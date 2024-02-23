@@ -26,7 +26,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'django-insecure-pzbz1*hzk@m5d-_19@)#$tx#+&_k&#j@8a-!9#^=&mr=2n9+11'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['grocerygenius-c328c9299cb8.herokuapp.com',
                  'www.grocery-genie.com',

@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.urls import reverse
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, authenticate, login
-from .models import Category, Shelf, Cart, CartItem, KeyStroke, Section
+from .models import Category, Shelf, Cart, CartItem, KeyStroke, Section, Recipe
 from django.http import JsonResponse
 from django.shortcuts import get_object_or_404
 import random as rd
@@ -53,36 +53,80 @@ def shelf(request, shelf_id):
 	else:
 		if not Shelf.objects.filter(pk=shelf_id).exists():
 			return HttpResponseRedirect(reverse('complete'))
-		shelf_count = Shelf.objects.all().count()
-		category_list = Category.objects.filter(shelf=shelf_id)
+
 		shelf = Shelf.objects.get(pk=shelf_id)
-		section_id = shelf.section.id
-		previous_section = section_id-1
 
-		if previous_section < 1:
-			previous_section = 1
-		previous_shelf = Shelf.objects.filter(section=previous_section).first().id
+		if shelf.section.name == "Recipes":
+			shelf_count = Shelf.objects.all().count()
+			recipe_list = Recipe.objects.filter(shelf=shelf_id)
+			section_id = shelf.section.id
+			previous_section = section_id-1
 
-		next_section = section_id + 1
-		if next_section > 10:
-			next_shelf = 999
+			if previous_section < 1:
+				previous_section = 1
+			previous_shelf = Shelf.objects.filter(section=previous_section).first().id
+
+			next_section = section_id + 1
+			if next_section > 11:
+				next_shelf = 999
+			else:
+				next_shelf = Shelf.objects.filter(section=next_section).first().id
+
+			recipe_grid = []
+
+			for i, c in enumerate(recipe_list):
+				if i%2 == 0:
+					recipe_grid.append([])
+				ingredient_list = []
+				cart = Cart.objects.filter(user=request.user).first()
+				for ingredient in c.ingredient_set.all():
+					cart_amount = cart.summary().get(ingredient.category.id, [0,0,0])[2]
+					ingredient_list.append((ingredient,cart_amount))
+				recipe_grid[int(i/2)].append((c,i+1,ingredient_list))
+
+			context = {
+				"recipe_grid": recipe_grid,
+				"shelf": Shelf.objects.get(pk=shelf_id),
+				"shelf_count": shelf_count,
+				"cart_dict": request.user.cart.summary(),
+				"cart_tot": '{:.2f}'.format(request.user.cart.total()),
+				"next_shelf": next_shelf,
+				"previous_shelf": previous_shelf
+			}
+			return render(request, "recipe.html", context)
+
 		else:
-			next_shelf = Shelf.objects.filter(section=next_section).first().id
-		category_grid = []
-		for i, c in enumerate(category_list):
-			if i%3 == 0:
-				category_grid.append([])
-			category_grid[int(i/3)].append((c,i+1))
-		context = {
-			"category_grid": category_grid,
-			"shelf": Shelf.objects.get(pk=shelf_id),
-			"shelf_count": shelf_count,
-			"cart_dict": request.user.cart.summary(),
-			"cart_tot": '{:.2f}'.format(request.user.cart.total()),
-			"next_shelf": next_shelf,
-			"previous_shelf": previous_shelf
-		}
-	return render(request, "shelf.html", context)
+			if not Shelf.objects.filter(pk=shelf_id).exists():
+				return HttpResponseRedirect(reverse('complete'))
+			shelf_count = Shelf.objects.all().count()
+			category_list = Category.objects.filter(shelf=shelf_id)
+			section_id = shelf.section.id
+			previous_section = section_id-1
+
+			if previous_section < 1:
+				previous_section = 1
+			previous_shelf = Shelf.objects.filter(section=previous_section).first().id
+
+			next_section = section_id + 1
+			if next_section > 11:
+				next_shelf = 999
+			else:
+				next_shelf = Shelf.objects.filter(section=next_section).first().id
+			category_grid = []
+			for i, c in enumerate(category_list):
+				if i%3 == 0:
+					category_grid.append([])
+				category_grid[int(i/3)].append((c,i+1))
+			context = {
+				"category_grid": category_grid,
+				"shelf": Shelf.objects.get(pk=shelf_id),
+				"shelf_count": shelf_count,
+				"cart_dict": request.user.cart.summary(),
+				"cart_tot": '{:.2f}'.format(request.user.cart.total()),
+				"next_shelf": next_shelf,
+				"previous_shelf": previous_shelf
+			}
+			return render(request, "shelf.html", context)
 
 def complete(request):
 	context={}

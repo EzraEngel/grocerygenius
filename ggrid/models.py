@@ -59,3 +59,17 @@ class CartItem(models.Model):
 class KeyStroke(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
+
+class Recipe(models.Model):
+	name = models.CharField(max_length=300)
+	shelf = models.ForeignKey(Shelf, on_delete=models.CASCADE)
+	def __str__(self):
+		return self.name
+
+class Ingredient(models.Model):
+	amount = models.IntegerField()
+	category = models.ForeignKey(Category, on_delete=models.CASCADE)
+	recipe = models.ForeignKey(Recipe, on_delete=models.CASCADE)
+	def __str__(self):
+		return self.category.name
+
