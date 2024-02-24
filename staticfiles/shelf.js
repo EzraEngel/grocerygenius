@@ -14,6 +14,15 @@ tiles.forEach(tile => {
     })
 });
 
+tiles.forEach(tile => {
+    tile.addEventListener('contextmenu', function(event) {
+        // Call the highlight function with the clicked tile
+        event.preventDefault();
+        highlightCard(this.getAttribute("id")); // 'this' refers to the clicked tile element
+        removeHighlightToCart();
+    })
+});
+
 
 // Listen for arrow key presses
 document.addEventListener('keydown', function(e) {
@@ -269,6 +278,62 @@ function addHighlightToCart() {
       cartTotal.textContent = (parseFloat(cartTotal.textContent) + parseFloat(price)).toFixed(2);
       let currentCount = parseInt(cartItem.textContent.split(': ')[1], 10);
       cartItem.textContent = `${itemName}: ${++currentCount}`;
+    }
+};
+
+function removeHighlightToCart() {
+    const inventoryItems = document.querySelectorAll('.card');
+    const cartItems = document.querySelectorAll('.cart-item');
+    const highlightedCard = document.querySelector('.highlight');
+    updateCartItem('DELETE', highlightedCard.getAttribute('category-pk'));
+
+    if (highlightedCard && highlightedCard.classList.contains('card')) {
+      if (highlightedCard) {
+        const itemName = highlightedCard.querySelector('.card-text').textContent.trim();
+        const sidebar = document.querySelector('.grocery-cart');
+        let cartItem = sidebar.querySelector(`[data-item-name="${itemName}"]`);
+
+        //Adjust Cart Total
+        let price = highlightedCard.querySelector('.price').textContent.trim();
+        let cartTotal = document.querySelector('.cart-total');
+        cartTotal.textContent = (parseFloat(cartTotal.textContent) - parseFloat(price)).toFixed(2);
+        
+        if (cartItem) {
+          let currentCount = parseInt(cartItem.textContent.split(': ')[1], 10);
+          if (currentCount > 1) {
+            cartItem.textContent = `${itemName}: ${--currentCount}`;
+          } else {
+            sidebar.removeChild(cartItem); // Remove the item from the cart if count goes to 0
+          }
+        }
+      }
+    }
+    else {
+      const sidebar = document.querySelector('.grocery-cart');
+      let cartItem = highlightedCard
+      let price = cartItem.getAttribute('price');
+      let cartTotal = document.querySelector('.cart-total');
+      cartTotal.textContent = (parseFloat(cartTotal.textContent) - parseFloat(price)).toFixed(2);
+      let itemName = highlightedCard.getAttribute('data-item-name');
+      let currentCount = parseInt(cartItem.textContent.split(': ')[1], 10);
+      if (currentCount > 1) {
+        cartItem.textContent = `${itemName}: ${--currentCount}`;
+      } else {
+        if (sidebar.childElementCount == 1) {
+          cartItem.classList.remove('highlight');
+          document.getElementById('1').classList.add('highlight')
+        }
+        else if (cartItem.nextSibling) {
+          cartItem.nextSibling.classList.add('highlight');
+        }
+        else if (cartItem.previousSibling) {
+          cartItem.previousSibling.classList.add('highlight');
+        }
+        else {
+          highlightCard(1);
+        }
+        sidebar.removeChild(cartItem); // Remove the item from the cart if count goes to 0
+      }
     }
 };
 

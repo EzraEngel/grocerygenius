@@ -510,3 +510,36 @@ document.querySelectorAll('.ingredient-row').forEach(function (ingredientRow) {
 
   })
 })
+
+document.querySelectorAll('.ingredient-row').forEach(function (ingredientRow) {
+  ingredientRow.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+
+    let cartAmount = ingredientRow.querySelector('.cart-amount');
+    cartAmount.innerText = parseInt(cartAmount.innerText) - 1;
+
+    highlightedCard = ingredientRow;
+    const inventoryItems = document.querySelectorAll('.ingredient-row');
+    const cartItems = document.querySelectorAll('.cart-item');
+    updateCartItem('DELETE', highlightedCard.getAttribute('category-pk'));
+
+    const itemName = highlightedCard.querySelector('.ingredient-name').textContent.trim();
+    const sidebar = document.querySelector('.grocery-cart');
+    let cartItem = sidebar.querySelector(`[data-item-name="${itemName}"]`);
+
+    //Adjust Cart Total
+    let price = highlightedCard.getAttribute('price');
+    let cartTotal = document.querySelector('.cart-total');
+    cartTotal.textContent = (parseFloat(cartTotal.textContent) - parseFloat(price)).toFixed(2);
+    
+    if (cartItem) {
+      let currentCount = parseInt(cartItem.textContent.split(': ')[1], 10);
+      if (currentCount > 1) {
+        cartItem.textContent = `${itemName}: ${--currentCount}`;
+      } else {
+        sidebar.removeChild(cartItem); // Remove the item from the cart if count goes to 0
+
+      }
+    }
+  })
+})

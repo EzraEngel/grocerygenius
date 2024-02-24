@@ -17,22 +17,27 @@
 
     <div class="container-fluid bg-dark" style="height: 100vh">
     	<div class=row>
-    		<div class="col-sm-3"></div>
-    		<div class="col-sm-6 bg-light m-5 p-3 rounded">
+    		<div class="col-sm-2"></div>
+    		<div class="col-sm-8 bg-light m-5 p-3 rounded">
     			<h1 class="text-center">Welcome</h1>
     			<h5>This is a prototype interface for a new way to shop for groceries. Please read the instructions below before continuing as data will be analyzed to make further improvements to the design.</h5>
           <h6 class="text-primary"><span class="font-weight-bold">Instructions.</span>The goal of this exercise is to browse through the inventory in the same way that you might do in a phyiscal store. You can navigate and build your cart using the commands below. Try to move through the mock storefront deliberately and quickly, so that we get a good sense of how long navigation takes under realistic conditions. When you complete browsing, you'll be prompted to complete a survey about your experience.</h6>
           <div class="row justify-content-center">
-            <div class="col-sm-6 bg-info align-self-center text-light rounded pt-2">
+            <div class="col-sm-5 pt-2">
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://grocerygenius.s3.us-east-2.amazonaws.com/video_proto.webm" allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-sm-6 align-self-center rounded pt-2">
               <h5 class="text-center font-weight-bold">Keyboard Controls</h5>
               <ul>
                 <li><span class="font-weight-bold">Arrow Keys:</span> Navigate between items</li>
-                <li><span class="font-weight-bold">Mouse Click:</span> Select and add item to cart</li>
+                <li><span class="font-weight-bold">Mouse Click <span class="text-info">(Right)</span>:</span> Select and add <span class="text-info">(remove)</span> an item</li>
                 <li><span class="font-weight-bold">Space:</span> Add selected item to cart</li>
                 <li><span class="font-weight-bold">Backspace:</span> Remove selected item to cart</li>
                 <li><span class="font-weight-bold">Escape:</span> Switch to cart navigation</li>
-                <li><span class="font-weight-bold">Tab <span class="text-warning">(+Shift)</span>:</span> Go to next <span class="text-warning">(previous)</span> shelf</li>
-                <li><span class="font-weight-bold">Enter <span class="text-warning">(+Shift)</span>:</span> Go to next <span class="text-warning">(previous)</span> section</li>
+                <li><span class="font-weight-bold">Tab <span class="text-info">(+Shift)</span>:</span> Go to next <span class="text-info">(previous)</span> shelf</li>
+                <li><span class="font-weight-bold">Enter <span class="text-info">(+Shift)</span>:</span> Go to next <span class="text-info">(previous)</span> section</li>
               </ul>
             </div>
           </div>
