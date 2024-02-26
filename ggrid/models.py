@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from datetime import datetime
 
 
 # Create your models here.
@@ -51,12 +52,15 @@ class Item(models.Model):
 		return self.name
 
 class CartItem(models.Model):
+	create_at = models.DateTimeField(auto_now_add=True, blank=True)
 	cart = models.ForeignKey(Cart, on_delete=models.CASCADE)
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
 	def __str__(self):
 		return self.category.name + "_" + self.cart.user.last_name
 
 class KeyStroke(models.Model):
+	create_at = models.DateTimeField(auto_now_add=True, blank=True)
+	key = models.CharField(max_length=100, blank=True)
 	user = models.ForeignKey(User, on_delete=models.CASCADE)
 	created_at = models.DateTimeField(auto_now_add=True)
 

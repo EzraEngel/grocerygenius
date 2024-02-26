@@ -46,7 +46,8 @@ def shelf(request, shelf_id):
 			else:
 				return JsonResponse({'status': 'Item not found in cart'}, status=404)
 		elif action == 'KEYSTROKE':
-			KeyStroke.objects.create(user=request.user)
+			key = request.POST.get('key_press')
+			KeyStroke.objects.create(user=request.user, key=key)
 			return JsonResponse({'status': 'Keystroke recorded'})
 
 		return JsonResponse({'status': 'Invalid action'}, status=400)

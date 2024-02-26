@@ -11,6 +11,7 @@ tiles.forEach(tile => {
         // Call the highlight function with the clicked tile
         highlightCard(this.getAttribute("id")); // 'this' refers to the clicked tile element
         addHighlightToCart();
+        updateCartItem("KEYSTROKE", "1", "click");
     })
 });
 
@@ -20,6 +21,7 @@ tiles.forEach(tile => {
         event.preventDefault();
         highlightCard(this.getAttribute("id")); // 'this' refers to the clicked tile element
         removeHighlightToCart();
+        updateCartItem("KEYSTROKE", "1", "right-click");
     })
 });
 
@@ -186,7 +188,7 @@ document.addEventListener('keydown', function(e) {
     const inventoryItems = document.querySelectorAll('.card');
     const cartItems = document.querySelectorAll('.cart-item');
     const highlightedCard = document.querySelector('.highlight');
-    updateCartItem('CREATE', highlightedCard.getAttribute('category-pk'));
+    updateCartItem('CREATE', highlightedCard.getAttribute('category-pk'), "1");
     
 
 
@@ -236,7 +238,7 @@ function addHighlightToCart() {
     const inventoryItems = document.querySelectorAll('.card');
     const cartItems = document.querySelectorAll('.cart-item');
     const highlightedCard = document.querySelector('.highlight');
-    updateCartItem('CREATE', highlightedCard.getAttribute('category-pk'));
+    updateCartItem('CREATE', highlightedCard.getAttribute('category-pk'), "1");
     
 
 
@@ -285,7 +287,7 @@ function removeHighlightToCart() {
     const inventoryItems = document.querySelectorAll('.card');
     const cartItems = document.querySelectorAll('.cart-item');
     const highlightedCard = document.querySelector('.highlight');
-    updateCartItem('DELETE', highlightedCard.getAttribute('category-pk'));
+    updateCartItem('DELETE', highlightedCard.getAttribute('category-pk'), "1");
 
     if (highlightedCard && highlightedCard.classList.contains('card')) {
       if (highlightedCard) {
@@ -344,7 +346,7 @@ document.addEventListener('keydown', function(e) {
     const inventoryItems = document.querySelectorAll('.card');
     const cartItems = document.querySelectorAll('.cart-item');
     const highlightedCard = document.querySelector('.highlight');
-    updateCartItem('DELETE', highlightedCard.getAttribute('category-pk'));
+    updateCartItem('DELETE', highlightedCard.getAttribute('category-pk'), "1");
 
     if (highlightedCard && highlightedCard.classList.contains('card')) {
       if (highlightedCard) {
@@ -424,14 +426,14 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-function updateCartItem(action, categoryId) {
+function updateCartItem(action, categoryId, keyPress) {
   fetch('', { // Update with the correct URL to your "shelf" view
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
       'X-CSRFToken': getCookie('csrftoken'), // Function to get CSRF token from cookies
     },
-    body: `action=${action}&category_id=${categoryId}`
+    body: `action=${action}&category_id=${categoryId}&key_press=${keyPress}`
   })
 }
 
@@ -451,8 +453,5 @@ function getCookie(name) {
 }
 
 document.addEventListener('keydown', function(e) {
-    updateCartItem("KEYSTROKE", "1")
-});
-document.addEventListener('click', function(e) {
-    updateCartItem("KEYSTROKE", "1")
+    updateCartItem("KEYSTROKE", "1", e.key)
 });
